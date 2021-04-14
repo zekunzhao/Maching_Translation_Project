@@ -12,6 +12,7 @@ import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 from queue import PriorityQueue
+from nltk.translate.bleu_score import sentence_bleu
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -542,7 +543,7 @@ class DFS(object):
             self.best_score = EOS_token_score
             endnode = BeamSearchNode(decoder_hidden, n, currentList, torch.tensor(EOS_token), self.best_score, n.leng + 1)
             self.best_node = endnode
-            print("serching ====>", '{:<30}'.format(str(self.best_node.currentList)) , "  score : ", "{:.2f}".format(self.best_score.item()))
+            # print("serching ====>", '{:<30}'.format(str(self.best_node.currentList)) , "  score : ", "{:.2f}".format(self.best_score.item()))
     
     
     
@@ -554,7 +555,7 @@ class DFS(object):
             currentList = n.currentList.copy()
             currentList.append(decoded_t.item())
             new_score = n.score + score
-            if new_score < self.best_score:
+            if new_score <  self.best_score:
                 return self.best_score, self.best_node
 
 
@@ -573,12 +574,12 @@ class DFS(object):
                 # print("endnode--->", output_lang.index2word[endnode.wordid.item()])
                 # print("endscore--->", endscore)
                 # print()
-                print("Original thresh_score ====>  ",self.best_score)
+                # print("Original thresh_score ====>  ",self.best_score)
                 self.best_score = endscore
                 self.best_node = endnode
-                print("Updating thresh_score ====>  ",self.best_score)
-                if self.best_node != None:
-                    print(self.best_node.currentList)
+                # print("Updating thresh_score ====>  ",self.best_score)
+                # if self.best_node != None:
+                #     print(self.best_node.currentList)
 
         return self.best_score, self.best_node
 
@@ -634,10 +635,18 @@ def train(input_tensor, target_tensor, encoder, decoder, encoder_optimizer, deco
     thresh_score = golden_score.item()
 
     #exact_decode
+    dfsclass = DFS(thresh_score,encoder_outputs,decoder)
+    try:
+        with time_limit(5):
+            score, n = dfsclass.dfs(node)
+    except TimeoutException as e:
+        n = dfsclass.best_node
+        score = dfsclass.best_score
 
-    score, n = DFS(thresh_score,encoder_outputs,decoder).dfs(node)
 
-    print()
+    if n == None:
+        return 0
+    # print()
     print(str(n.currentList)+"score = "+str(score))
     utterance = []
     utterance.append(output_lang.index2word[n.wordid.item()])
@@ -724,15 +733,11 @@ def trainIters(encoder, decoder, n_iters, print_every=1000, plot_every=100, lear
         if iter % print_every == 0:
             print_loss_avg = print_loss_total / print_every
             print_loss_total = 0
-            # torch.save(encoder1.state_dict(),'data/model/encode1')
-            # torch.save(attn_decoder1.state_dict(),'data/model/attn_decoder1')
+
+            torch.save(encoder1.state_dict(),'{0}/EXACT-percep_encoder1__{1}'.format( 1, print_loss_avg))
+            torch.save(attn_decoder1.state_dict(),'{0}/EXACT-percep_attn_decoder1__{1}'.format( 1, print_loss_avg ))
             print('%s (%d %d%%) %.4f' % (timeSince(start, iter / n_iters),
                                          iter, iter / n_iters * 100, print_loss_avg))
-
-        if iter % plot_every == 0:
-            plot_loss_avg = plot_loss_total / plot_every
-            plot_losses.append(plot_loss_avg)
-            plot_loss_total = 0
 
 
     # showPlot(plot_losses)
@@ -795,22 +800,26 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
 
         node = BeamSearchNode(decoder_hidden, None, currentList, decoder_input, 0, 1)
         thresh_score = torch.tensor(float('-inf'))
-        score, n = DFS(thresh_score,encoder_outputs,decoder).dfs(node)
-
+        dfsclass = DFS(thresh_score,encoder_outputs,decoder)
+        try:
+            with time_limit(5):
+                score, n = dfsclass.dfs(node)
+        except TimeoutException as e:
+            n = dfsclass.best_node
+            score = dfsclass.best_score
+                # print("Timed out!")
        
-        print(str(n.currentList)+"score = "+str(score))
+        # print(str(n.currentList)+"score = "+str(score))
         utterance = []
+        if n == None:
+            return utterance
         utterance.append(output_lang.index2word[n.wordid.item()])
         while n.prevNode != None:
             n = n.prevNode
             utterance.append(output_lang.index2word[n.wordid.item()])
     
         utterance = utterance[::-1]
-        print(utterance)
-        if len(utterance) < 3: 
-            return 1
-        else:
-            return 0
+        return utterance
         
 
         # return utterance
@@ -818,25 +827,50 @@ def evaluate(encoder, decoder, sentence, max_length=MAX_LENGTH):
 """We can evaluate random sentences from the training set and print out the
 input, target, and output to make some subjective quality judgements:
 """
+import signal
+from contextlib import contextmanager
+
+class TimeoutException(Exception): pass
+
+
+def long_function_call():
+    a = 0
+    while 1:
+        a = a+1
+        # print("running!")
+    return
+
+@contextmanager
+def time_limit(seconds):
+    def signal_handler(signum, frame):
+        raise TimeoutException("Timed out!")
+    signal.signal(signal.SIGALRM, signal_handler)
+    signal.alarm(seconds)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
 
 def evaluateRandomly(encoder, decoder, n=10):
-    num = 0
+    score = 0
     for i in range(n):
-        pair = random.choice(pairs)
-
-        ref = []
-        ref.append('SOS')
-        for item in pair[1].split():
-            ref.append(item)
-        ref.append('EOS')
-        print(ref)
-        print(pair[1])
+        pair = pairs[i]
         # print('>', pair[0])
         # print('=', pair[1])
-        num += evaluate(encoder, decoder, pair[0])
-        # output_sentence = ' '.join(output_words)
-        # print('<', output_sentence)
-    print('empty num:', num)
+        # ref = []
+        # ref.append('SOS')
+        # for item in pair[1].split():
+        #     ref.append(item)
+        # ref.append('EOS')
+
+        candidates = evaluate(encoder, decoder, pair[0])
+        
+        output_sentence = ' '.join(candidates[1:-1])
+        print(output_sentence)
+        # bleu = sentence_bleu([ref], candidates)
+        # # print(bleu)
+        # score += bleu
+    return 
 
 """Training and Evaluating
 =======================
@@ -855,20 +889,70 @@ reasonable results.
    evaluate, and continue training later. Comment out the lines where the
    encoder and decoder are initialized and run ``trainIters`` again.
 """
+def readTestdata(lang1, lang2, reverse=False, dataset = 'train'):
+    print("Reading lines...")
 
+    if dataset == 'train':
+
+        # Read the file and split into lines
+        lines = open('0/out-train.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+            read().strip().split('\n')
+        lines2 = open('0/out-train.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+            read().strip().split('\n')
+
+        # Split every line into pairs and normalize
+        pairs = [[normalizeString(lines[item]),normalizeString(lines2[item])] for item in range(len(lines))]
+    if dataset == 'val':
+
+        # Read the file and split into lines
+        lines = open('0/out-val.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+            read().strip().split('\n')
+        lines2 = open('0/out-val.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+            read().strip().split('\n')
+
+        # Split every line into pairs and normalize
+        pairs = [[normalizeString(lines[item]),normalizeString(lines2[item])] for item in range(len(lines))]
+
+    if dataset == 'test':
+
+        # Read the file and split into lines
+        lines = open('0/out-test.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+            read().strip().split('\n')
+        lines2 = open('0/out-test.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+            read().strip().split('\n')
+
+        # Split every line into pairs and normalize
+        pairs = [[normalizeString(lines[item]),normalizeString(lines2[item])] for item in range(len(lines))]
+    if reverse:
+        pairs = [list(reversed(p)) for p in pairs]
+    return pairs
+
+pairs = readTestdata('fr', 'en', True, 'train')
 hidden_size = 256
 encoder1 = EncoderRNN(input_lang.n_words, hidden_size).to(device)
 attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).to(device)
 
 # trainIters(encoder1, attn_decoder1, 1000, print_every=100, learning_rate=0.01)
+# encoder1.load_state_dict(torch.load("0/TRUEONLYTEACHpercep_encoder1__0.17780013382434845_714.9898776134119_0.14045269787311554_699.7516417223444"))
+# attn_decoder1.load_state_dict(torch.load("0/TRUEONLYTEACHpercep_attn_decoder1__0.17780013382434845_714.9898776134119_0.14045269787311554_699.7516417223444"))
+
+# encoder1.load_state_dict(torch.load("0/2TEACHpercep_encoder1__0.18038101494312286_715.1640927611335_0.1423390507698059_699.7988464736917"))
+# attn_decoder1.load_state_dict(torch.load("0/2TEACHpercep_attn_decoder1__0.18038101494312286_715.1640927611335_0.1423390507698059_699.7988464736917"))
+
+# encoder1.load_state_dict(torch.load("0/NOTEACHpercep_encoder1__-0.7585325241088867_955.6725159312418"))
+# attn_decoder1.load_state_dict(torch.load("0/NOTEACHpercep_attn_decoder1__-0.7585325241088867_955.6725159312418"))
+encoder1.load_state_dict(torch.load("1/EXACT-percep_encoder1__0.11535872602142215"))
+attn_decoder1.load_state_dict(torch.load("1/EXACT-percep_attn_decoder1__0.11535872602142215"))
+# trainIters(encoder1, attn_decoder1, 5*len(pairs), print_every=len(pairs)/4, learning_rate=0.01)
+
+outfile = open('%d/exact-exacttrain-perce-model-out-test.fr-en.en' % 0, 'w')
+sys.stdout = outfile
+evaluateRandomly(encoder1, attn_decoder1, len(pairs))
+outfile.close()
 
 
-
-
-encoder1.load_state_dict(torch.load("data/model/encoder1"))
-attn_decoder1.load_state_dict(torch.load('data/model/attn_decoder1'))
-
-evaluateRandomly(encoder1, attn_decoder1)
+# print("===============================================================")
+# print(bleuscore)
 
 """Visualizing Attention
 ---------------------
