@@ -410,7 +410,7 @@ class AttnDecoderRNN(nn.Module):
 
     def forward(self, input, hidden, encoder_outputs):
         embedded = self.embedding(input).view(1, 1, -1)
-        embedded = self.dropout(embedded)
+        # embedded = self.dropout(embedded)
 
         attn_weights = F.softmax(
             self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
@@ -498,7 +498,7 @@ class DFS(object):
     def __init__(self,thresh_score,encoder_outputs,decoder):
 
         self.best_node = None
-        self.best_score = thresh_score
+        self.best_score = -thresh_score
         self.encoder_outputs = encoder_outputs
         self.decoder = decoder
 
@@ -511,7 +511,11 @@ class DFS(object):
         # print("deeper::",output_lang.index2word[n.wordid.item()])
         # print(n.leng)
         # wait = input("PRESS ENTER TO CONTINUE.")
-
+        # print("DEEPER")
+        # print("serching ====>", '{:<30}'.format(str(n.currentList)))
+        # print("serching ====>", "    score : ", "{:.2f}".format(n.score) )
+        # print("serching ====>", "  thresh : ", "{:.2f}".format(self.best_score.item()))
+        # print("")
         if n.wordid.item() == EOS_token or n.leng == MAX_LENGTH:
             return n.score, n
         decoder_input = n.wordid
@@ -542,7 +546,9 @@ class DFS(object):
 
         EOS_token_score = n.score+(decoder_output[0][EOS_token])
         if EOS_token_score >=  self.best_score:
-            # print()
+            # print("EOS bigger")
+            # print("serching ====>", "  EOS_token_score : ", "{:.2f}".format(EOS_token_score.item()))
+            # print("serching ====>", "  thresh : ", "{:.2f}".format(self.best_score.item()))
             # print("Original thresh_score ====>  ",self.best_score)
             # self.second_node = self.best_node
             
@@ -563,14 +569,15 @@ class DFS(object):
             currentList.append(decoded_t.item())
             new_score = n.score + score
             if new_score < self.best_score:
-                print(new_score)
-                print(self.best_score.item())
+                # print("No better result Further")
+                # print(new_score.item())
+                # print(self.best_score.item())
                 return self.best_score, self.best_node
 
 
 
             node = BeamSearchNode(decoder_hidden, n, currentList, decoded_t, new_score, n.leng + 1)
-            print("\rserching ====>", '{:<30}'.format(str(node.currentList)) ,"    score : ", "{:.2f}".format(node.score.item()) , "  thresh : ", "{:.2f}".format(self.best_score.item()),end="",flush=True)
+            # print("\rserching ====>", '{:<30}'.format(str(node.currentList)) ,"    score : ", "{:.2f}".format(node.score.item()) , "  thresh : ", "{:.2f}".format(self.best_score.item()),end="",flush=True)
             endscore, endnode = self._dfs(node)
 
     
@@ -582,7 +589,7 @@ class DFS(object):
                 
                 # print("endnode--->", output_lang.index2word[endnode.wordid.item()])
                 # print("endscore--->", endscore)
-                # print()
+                # print("!!!!better result Further")
                 # print("Original thresh_score ====>  ",self.best_score)
                 self.best_score = endscore
                 self.best_node = endnode
@@ -627,7 +634,7 @@ def train(current_pair,input_tensor, target_tensor, encoder, decoder, encoder_op
             decoder_input = target_tensor[di]  # feed the golden label
             golden_score += -(decoder_output[0][target_tensor[di]])
         # print("golden-label : ", golden_score.item())
-        # print(target_tensor.squeeze().tolist())
+        
         # print(golden_score.requires_grad)
         # print(golden_score.grad_fn)  
 
@@ -641,13 +648,13 @@ def train(current_pair,input_tensor, target_tensor, encoder, decoder, encoder_op
 
     node = BeamSearchNode(decoder_hidden, None, currentList,  decoder_input, 0, 0)
     thresh_score = golden_score.item()
-    print(thresh_score)
+    # print("golden_score : ",thresh_score)
     #exact_decode
 
 
     dfsclass = DFS(golden_score,encoder_outputs,decoder)
     try:
-        with time_limit(5):
+        with time_limit(50):
             score, n = dfsclass.dfs(node)
     except TimeoutException as e:
         n = dfsclass.best_node
@@ -655,10 +662,11 @@ def train(current_pair,input_tensor, target_tensor, encoder, decoder, encoder_op
 
     # score, n = dfsclass.dfs(node)
     if n == None:
+        # print("None result from DFS-……-")
         return 0
 
-    # print()
-    print(str(n.currentList)+"score = "+str(score))
+    # print("")
+    # print(str(n.currentList)+"score = "+str(score))
     utterance = []
     utterance.append(output_lang.index2word[n.wordid.item()])
     while n.prevNode != None:
@@ -667,15 +675,17 @@ def train(current_pair,input_tensor, target_tensor, encoder, decoder, encoder_op
     utterance = utterance[::-1]
 
 
-
-    loss = -golden_score
+    # print(golden_score.item())
+    loss = golden_score
     loss += score
     # print(loss.requires_grad)
     # print(loss.grad_fn)  
+    
+
 
     # print()
     # print("search-label : ",(score))
-    
+    # print(target_tensor.squeeze().tolist())
     # print(utterance)
     # print("-------- loss ---------    >>>>>>>>>    ",loss.item(),"  <<<<<<<<<<")
     # wait = input("PRESS ENTER TO CONTINUE.")
@@ -720,8 +730,8 @@ def val_train_log(current_pair,input_tensor, target_tensor, encoder, decoder, en
 
             decoder_input = target_tensor[di]  # feed the golden label
             golden_score += -(decoder_output[0][target_tensor[di]])
-        # print("golden-label : ", golden_score.item())
-        # print(target_tensor.squeeze().tolist())
+        print("golden-label : ", golden_score.item())
+        print(target_tensor.squeeze().tolist())
         # print(golden_score.requires_grad)
         # print(golden_score.grad_fn)  
 
@@ -740,7 +750,7 @@ def val_train_log(current_pair,input_tensor, target_tensor, encoder, decoder, en
 
         dfsclass = DFS(golden_score,encoder_outputs,decoder)
         try:
-            with time_limit(5):
+            with time_limit(50):
                 score, n = dfsclass.dfs(node)
         except TimeoutException as e:
             n = dfsclass.best_node
@@ -748,9 +758,10 @@ def val_train_log(current_pair,input_tensor, target_tensor, encoder, decoder, en
 
         # score, n = dfsclass.dfs(node)
         if n == None:
+            print("NO RESULT")
             return torch.tensor(0), 1
         # print()
-        # print(str(n.currentList)+"score = "+str(score))
+        print(str(n.currentList)+"score = "+str(score))
         utterance = []
         utterance.append(output_lang.index2word[n.wordid.item()])
         while n.prevNode != None:
@@ -765,7 +776,7 @@ def val_train_log(current_pair,input_tensor, target_tensor, encoder, decoder, en
         ref.append('EOS')
         cost = 1.0 - sentence_bleu([ref],utterance)
 
-        loss = -golden_score
+        loss = golden_score
         loss += score
     # print(loss.requires_grad)
     # print(loss.grad_fn)  
@@ -819,8 +830,10 @@ def trainIters(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_every=10
     val_loss_pre = float('inf')
     val_cost_pre = float('inf')
 
-    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate)
-    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate)
+    encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate,momentum=0.5)
+    decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate,momentum=0.5)
+    encoder_scheduler = torch.optim.lr_scheduler.StepLR(encoder_optimizer, 1.0, gamma=0.95)
+    decoder_scheduler = torch.optim.lr_scheduler.StepLR(decoder_optimizer, 1.0, gamma=0.95)
     randomNUM = np.random.permutation(n_iters)
 
     current_pairs = [pairs[randomNUM[i]%(len(pairs))] for i in range(n_iters)]
@@ -840,10 +853,11 @@ def trainIters(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_every=10
         training_pair = training_pairs[iter - 1]
         input_tensor = training_pair[0]
         target_tensor = training_pair[1]
+        # loss = 0
 
         loss = train(current_pairs[iter - 1],input_tensor, target_tensor, encoder,
-                     decoder, encoder_optimizer, decoder_optimizer, criterion)
-        print("-------- loss ---------    >>>>>>>>>    ",loss,"  <<<<<<<<<<")
+            decoder, encoder_optimizer, decoder_optimizer, criterion)
+        # print("-------- loss ---------    >>>>>>>>>    ",loss,"  <<<<<<<<<<")
         print_loss_total += loss
         plot_loss_total += loss
 
@@ -868,6 +882,8 @@ def trainIters(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_every=10
             # if (val_loss_pre < val_loss) and (val_cost_pre < val_cost):
             #     print("**********************Congraduation!!!!!********************")
             #     break
+            print("___________________________________________________________")
+            print(val_cost)
 
 
             T_loss = 0
@@ -879,14 +895,16 @@ def trainIters(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_every=10
                 target_tensor = T_pair[1]
 
                 loss, cost = val_train_log(T_current_pairs[item],input_tensor, target_tensor, encoder,decoder, encoder_optimizer, decoder_optimizer, criterion)
-                T_loss += loss
+                T_loss += loss.item()
                 T_cost += cost
 
             T_loss = T_loss//len(T_pairs)
+            encoder_scheduler.step()
+            decoder_scheduler.step()
             # torch.save(encoder1.state_dict(),'data/model/encode1')
             # torch.save(attn_decoder1.state_dict(),'data/model/attn_decoder1')
-            torch.save(encoder1.state_dict(),'{0}/ONLYTEACH-exact-pro_encoder1__{1}_{2}_{3}_{4}'.format( 4, val_loss.item(), val_cost,T_loss.item(), T_cost))
-            torch.save(attn_decoder1.state_dict(),'{0}/ONLYTEACH-exact-pro_attn_decoder1__{1}_{2}_{3}_{4}'.format( 4, val_loss.item(), val_cost,T_loss.item(), T_cost ))
+            torch.save(encoder1.state_dict(),'{0}/ONLYTEACH-exact-pro_encoder1__{1}_{2}_{3}_{4}'.format( 7, val_loss.item(), val_cost,T_loss, T_cost))
+            torch.save(attn_decoder1.state_dict(),'{0}/ONLYTEACH-exact-pro_attn_decoder1__{1}_{2}_{3}_{4}'.format( 7, val_loss.item(), val_cost,T_loss, T_cost ))
             print('%s (%d %d%%) %.4f' % (timeSince(start, iter / n_iters),
                                          iter, iter / n_iters * 100, print_loss_avg))
 
@@ -1096,8 +1114,8 @@ attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).
 
 # attn_decoder1.out.bias.data[EOS_token] = -9.0
 # print(attn_decoder1.out.bias.data[EOS_token])
-encoder1.load_state_dict(torch.load("3/ONLYTEACH-pro_encoder1__23.951189041137695_644.469241437078_21.292890548706055_629.604059978335"))
-attn_decoder1.load_state_dict(torch.load("3/ONLYTEACH-pro_attn_decoder1__23.951189041137695_644.469241437078_21.292890548706055_629.604059978335"))
+# encoder1.load_state_dict(torch.load("6/ONLYTEACH-exact-pro_encoder1__12.0_801.3491646352852_11.0_787.7667656333077"))
+# attn_decoder1.load_state_dict(torch.load("6/ONLYTEACH-exact-pro_attn_decoder1__12.0_801.3491646352852_11.0_787.7667656333077"))
 trainIters(pairs, v_pairs, T_pairs,encoder1, attn_decoder1, 100*len(pairs), print_every=len(pairs), learning_rate=0.01)
 
 
