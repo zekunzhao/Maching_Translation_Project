@@ -19,6 +19,8 @@ from nltk.translate.bleu_score import sentence_bleu
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
 import signal
 from contextlib import contextmanager
 
@@ -473,6 +475,18 @@ def prepareData(lang1, lang2, reverse=False,dataset='europarl-v7'):
     print(input_lang.name, input_lang.n_words)
     print(output_lang.name, output_lang.n_words)
     return input_lang, output_lang, pairs
+
+
+
+
+
+dir_num = sys.argv[1]
+# dir_num = input("PRESS dir_num TO CONTINUE.")
+if not os.path.exists(str(dir_num)):
+    os.makedirs(str(dir_num))
+    print("dir_num initialized ...")
+else :
+    print("dir_num existed!")
 
 # input_lang, output_lang, pairs = prepareData('fr', 'en', True)
 input_lang, output_lang, pairs = prepareData('eng', 'fra', True,'original')
@@ -1450,9 +1464,9 @@ def trainIters_log(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_ever
             evaluateRandomly_log_Beam(encoder1, attn_decoder1,100,beam=5)
             outfile_beam.close()
 
-            outfile_beam10 = open('{0}/Beam200_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
+            outfile_beam10 = open('{0}/Beam20_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
             sys.stdout = outfile_beam10
-            evaluateRandomly_log_Beam(encoder1, attn_decoder1,100,beam=200)
+            evaluateRandomly_log_Beam(encoder1, attn_decoder1,100,beam=20)
             outfile_beam10.close()
 
             outfile_dfs = open('{0}/Dfs_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
@@ -1469,7 +1483,7 @@ def trainIters_log(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_ever
 
             os.system("cat {0}/ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
             os.system("cat {0}/Beam_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
-            os.system("cat {0}/Beam200_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
+            os.system("cat {0}/Beam20_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
             os.system("cat {0}/Dfs_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
             # os.system("cat {0}/Dfs10_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
             sys.stdout = orig_stdout
@@ -2156,4 +2170,5 @@ attn_decoder1 = AttnDecoderRNN_log(hidden_size, output_lang.n_words, dropout_p=0
 # attn_decoder1.load_state_dict(torch.load("0/NOTEACH-pro_attn_decoder1__14.986833572387695_689.4869410266194_12.674849510192871_674.7815071154189"))
 # encoder1.load_state_dict(torch.load("14/ONLYTEACH-pro_encoder1__24.18207550048828_648.737279042414_21.028303146362305_665.1957092220754_25.0"))
 # attn_decoder1.load_state_dict(torch.load("14/ONLYTEACH-pro_attn_decoder1__24.18207550048828_648.737279042414_21.028303146362305_665.1957092220754_25.0"))
-trainIters_log(pairs, v_pairs, T_pairs,encoder1, attn_decoder1, 100*len(pairs), print_every=len(pairs), learning_rate=0.01, num = 19)
+
+trainIters_log(pairs, v_pairs, T_pairs,encoder1, attn_decoder1, 100*len(pairs), print_every=len(pairs), learning_rate=0.01, num = dir_num)
