@@ -19,7 +19,29 @@ from nltk.translate.bleu_score import sentence_bleu
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+import signal
+from contextlib import contextmanager
 
+class TimeoutException(Exception): pass
+
+
+def long_function_call():
+    a = 0
+    while 1:
+        a = a+1
+        # print("running!")
+    return
+
+@contextmanager
+def time_limit(seconds):
+    def signal_handler(signum, frame):
+        raise TimeoutException("Timed out!")
+    signal.signal(signal.SIGALRM, signal_handler)
+    signal.alarm(seconds)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
 
 
 
@@ -71,7 +93,7 @@ class BeamSearchNode(object):
         return self.score
 
         # return -self.logp / float(self.leng - 1 + 1e-6) + alpha * reward
-class DFS(object):
+class DFS_exp_score(object):
     def __init__(self,thresh_score,encoder_outputs,decoder):
 
         self.best_node = None
@@ -167,7 +189,110 @@ class DFS(object):
                 #     print(self.best_node.currentList)
 
         return self.best_score, self.best_node
+class DFS(object):
+    def __init__(self,thresh_score,encoder_outputs,decoder):
 
+        self.best_node = None
+        self.best_score = thresh_score
+        self.encoder_outputs = encoder_outputs
+        self.decoder = decoder
+
+    def dfs(self,root):
+        self._dfs(root)
+        return self.best_score, self.best_node
+
+    def _dfs(self,n):
+        # print("deeper::",output_lang.index2word[n.wordid.item()])
+        # print("deeper::",output_lang.index2word[n.wordid.item()])
+        # print(n.leng)
+        # wait = input("PRESS ENTER TO CONTINUE.")
+        # print("DEEPER")
+        # print("serching ====>", '{:<30}'.format(str(n.currentList)))
+        # print("serching ====>", "    score : ", "{:.2f}".format(n.score) )
+        # print("serching ====>", "  thresh : ", "{:.2f}".format(self.best_score.item()))
+        # print("")
+        if n.wordid.item() == EOS_token or n.leng == MAX_LENGTH:
+            return n.score, n
+        decoder_input = n.wordid
+        decoder_hidden = n.h
+        decoder_output, decoder_hidden, decoder_attention = self.decoder(decoder_input, decoder_hidden, self.encoder_outputs)
+        # for index in range
+        #     print(decoder_output[0][index])
+        topv, topi = decoder_output.topk(len(decoder_output[0]))
+        # for new_k in range(len(decoder_output[0])):
+        #     if topi[0][new_k].squeeze().item() < 10:
+        #         print("testing!!-----------------")
+        #         print(topi[0][new_k].squeeze().item())
+        #         print(-topv[0][new_k])
+        # wait = input("PRESS ENTER TO CONTINUE.")
+
+    
+        # if self.best_score <= n.score-torch.exp(decoder_output[0][EOS_token]):
+        #     print()
+        #     print("Original thresh_score ====>  ",self.best_score)
+            
+        #     currentList = n.currentList.copy()
+        #     currentList.append(EOS_token)
+        #     self.best_score = n.score-torch.exp(decoder_output[0][EOS_token])
+        #     endnode = BeamSearchNode(decoder_hidden, n, currentList, torch.tensor(EOS_token), self.best_score, n.leng + 1)
+        #     self.best_node = endnode
+        #     print("Updating thresh_score ====>  ",self.best_score)
+        #     print(self.best_node.currentList)
+
+        EOS_token_score = n.score+(decoder_output[0][EOS_token])
+        if EOS_token_score >=  self.best_score:
+            # print("EOS bigger")
+            # print("serching ====>", "  EOS_token_score : ", "{:.2f}".format(EOS_token_score.item()))
+            # print("serching ====>", "  thresh : ", "{:.2f}".format(self.best_score.item()))
+            # print("Original thresh_score ====>  ",self.best_score)
+            # self.second_node = self.best_node
+            
+            currentList = n.currentList.copy()
+            currentList.append(EOS_token)
+            self.best_score = EOS_token_score
+            endnode = BeamSearchNode(decoder_hidden, n, currentList, torch.tensor(EOS_token), self.best_score, n.leng + 1)
+            self.best_node = endnode
+            # print("serching ====>", '{:<30}'.format(str(self.best_node.currentList)) , "  score : ", "{:.2f}".format(self.best_score.item()))
+    
+    
+        for new_k in range(len(decoder_output[0])):
+
+    
+            decoded_t = topi[0][new_k].squeeze().detach()
+            score = topv[0][new_k]
+            currentList = n.currentList.copy()
+            currentList.append(decoded_t.item())
+            new_score = n.score + score
+            if new_score < self.best_score:
+                # print("No better result Further")
+                # print(new_score.item())
+                # print(self.best_score.item())
+                return self.best_score, self.best_node
+
+
+
+            node = BeamSearchNode(decoder_hidden, n, currentList, decoded_t, new_score, n.leng + 1)
+            # print("\rserching ====>", '{:<30}'.format(str(node.currentList)) ,"    score : ", "{:.2f}".format(node.score.item()) , "  thresh : ", "{:.2f}".format(self.best_score.item()),end="",flush=True)
+            endscore, endnode = self._dfs(node)
+
+    
+    
+            # print("new_score",new_score)
+            # print("thresh_score",thresh_score)
+            # wait = input("PRESS ENTER TO CONTINUE.")
+            if endscore > self.best_score:
+                
+                # print("endnode--->", output_lang.index2word[endnode.wordid.item()])
+                # print("endscore--->", endscore)
+                # print("!!!!better result Further")
+                # print("Original thresh_score ====>  ",self.best_score)
+                self.best_score = endscore
+                self.best_node = endnode
+                # print("Updating thresh_score ====>  ",self.best_score)
+                # if self.best_node != None:
+                #     print(self.best_node.currentList)
+
+        return self.best_score, self.best_node
 """The files are all in Unicode, to simplify we will turn Unicode
 characters to ASCII, make everything lowercase, and trim most
 punctuation.
@@ -521,7 +646,7 @@ class AttnDecoderRNN(nn.Module):
 
     def forward(self, input, hidden, encoder_outputs):
         embedded = self.embedding(input).view(1, 1, -1)
-        # embedded = self.dropout(embedded) # should not use if we want argmax
+        embedded = self.dropout(embedded) # should not use if we want argmax
 
         attn_weights = F.softmax(
             self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
@@ -582,7 +707,7 @@ class AttnDecoderRNN_log(nn.Module):
 
     def forward(self, input, hidden, encoder_outputs):
         embedded = self.embedding(input).view(1, 1, -1)
-        embedded = self.dropout(embedded)
+        # embedded = self.dropout(embedded)
 
         attn_weights = F.softmax(
             self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
@@ -1311,9 +1436,43 @@ def trainIters_log(pairs, v_pairs, T_pairs,encoder, decoder, n_iters, print_ever
 
 
 
-            torch.save(encoder1.state_dict(),'{0}/ONLYTEACH-pro_encoder1__{1}_{2}_{3}_{4}'.format( num, val_loss.item(), val_cost,T_loss.item(), T_cost))
-            torch.save(attn_decoder1.state_dict(),'{0}/ONLYTEACH-pro_attn_decoder1__{1}_{2}_{3}_{4}'.format( num, val_loss.item(), val_cost,T_loss.item(), T_cost ))
+            torch.save(encoder1.state_dict(),'{0}/ONLYTEACH-pro_encoder1__{1}_{2}_{3}_{4}_{5}'.format( num, val_loss.item(), val_cost,T_loss.item(), T_cost,iter / n_iters * 100))
+            torch.save(attn_decoder1.state_dict(),'{0}/ONLYTEACH-pro_attn_decoder1__{1}_{2}_{3}_{4}_{5}'.format( num, val_loss.item(), val_cost,T_loss.item(), T_cost,iter / n_iters * 100 ))
+            
+            outfile = open('{0}/ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
+            orig_stdout = sys.stdout
+            sys.stdout = outfile
+            evaluateRandomly_log(encoder1, attn_decoder1,100)
+            outfile.close()
 
+            outfile_beam = open('{0}/Beam_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
+            sys.stdout = outfile_beam
+            evaluateRandomly_log_Beam(encoder1, attn_decoder1,100,beam=5)
+            outfile_beam.close()
+
+            outfile_beam10 = open('{0}/Beam20_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
+            sys.stdout = outfile_beam10
+            evaluateRandomly_log_Beam(encoder1, attn_decoder1,100,beam=20)
+            outfile_beam10.close()
+
+            outfile_dfs = open('{0}/Dfs_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
+            sys.stdout = outfile_dfs
+            evaluateRandomly_log_Dfs(encoder1, attn_decoder1,100,time=5)
+            outfile_dfs.close()
+
+            # outfile_dfs10 = open('{0}/Dfs10_ONLYTEACH-pro_encoder1__{1}'.format( num,iter / n_iters * 100), 'w')
+            # sys.stdout = outfile_dfs10
+            # evaluateRandomly_log_Dfs(encoder1, attn_decoder1,100,time=500)
+            # outfile_dfs10.close()
+
+
+
+            os.system("cat {0}/ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
+            os.system("cat {0}/Beam_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
+            os.system("cat {0}/Beam20_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
+            os.system("cat {0}/Dfs_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
+            # os.system("cat {0}/Dfs10_ONLYTEACH-pro_encoder1__{1} | sacrebleu 0/out-test.fr-en.en".format( num,iter / n_iters * 100))
+            sys.stdout = orig_stdout
             print('%s (%d %d%%) %.4f  %.4f' % (timeSince(start, iter / n_iters),
                                          iter, iter / n_iters * 100, print_loss_avg, val_loss))
 """Plotting results
@@ -1484,6 +1643,8 @@ def evaluate_log(encoder, decoder, sentence, max_length=MAX_LENGTH):
                 decoder_input, decoder_hidden, encoder_outputs)
             decoder_attentions[di] = decoder_attention.data
             topv, topi = decoder_output.data.topk(1)
+            # print("!!!!!!!!!!!!!!!!!!!!!!!!!")
+            # print(topv)
             if topi.item() == EOS_token:
                 decoded_words.append('EOS')
                 break
@@ -1494,7 +1655,168 @@ def evaluate_log(encoder, decoder, sentence, max_length=MAX_LENGTH):
 
         return decoded_words
         # return decoded_words, decoder_attentions[:di + 1]
+def evaluate_log_Beam(encoder, decoder, sentence,beam=5, max_length=MAX_LENGTH):
+    with torch.no_grad():
+        input_tensor = tensorFromSentence(input_lang, sentence)
+        input_length = input_tensor.size()[0]
+        encoder_hidden = encoder.initHidden()
 
+        encoder_outputs = torch.zeros(max_length, encoder.hidden_size, device=device)
+
+        for ei in range(input_length):
+            encoder_output, encoder_hidden = encoder(input_tensor[ei],
+                                                     encoder_hidden)
+            encoder_outputs[ei] += encoder_output[0, 0]
+
+        decoder_input = torch.tensor([[SOS_token]], device=device)  # SOS
+
+        decoder_hidden = encoder_hidden
+        currentList = [decoder_input.item()]
+
+        decoded_words = []
+        decoder_attentions = torch.zeros(max_length, max_length)
+
+        
+        node = BeamSearchNode(decoder_hidden, None, currentList,  decoder_input, 0, 0)
+        nodes = PriorityQueue()
+        nextnodes = PriorityQueue()
+        endnodes = PriorityQueue()
+
+
+        # start the queue
+        nodes.put((-node.eval(), node))
+
+        # f = open('test-output.txt', 'w')
+        beam_search = True
+        best_score = 0
+
+
+        while True:
+                
+            for _ in range(nodes.qsize()):
+
+                S, n = nodes.get()
+                if n.leng == MAX_LENGTH or n.wordid.item() == EOS_token:
+                    endnodes.put(((-n.eval()),n))
+                    # print("Enough!")
+                    if endnodes.qsize() == beam:
+                        break
+                    continue
+
+                decoder_input = n.wordid
+                decoder_hidden = n.h
+                # print("serching ====>", '{:<30}'.format(str(n.currentList)) , "  score : ", "{:.2f}".format(n.score))
+
+                decoder_output, decoder_hidden, decoder_attention = decoder(decoder_input, decoder_hidden, encoder_outputs)
+                topv, topi = (decoder_output).topk(beam)
+                # print("serching ====>", '{:<30}'.format(str(n.currentList)+"EOS") , "  score : ", "{:.2f}".format(n.score-torch.exp(-topv[0][EOS_token])))
+                for new_k in range(beam):
+                    # print("new_k",new_k)
+                    decoded_t = topi[0][new_k].squeeze().detach()
+                    score = topv[0][new_k]
+                    currentList = n.currentList.copy()
+                    currentList.append(decoded_t.item())
+                    new_score = n.score +score
+
+                    node = BeamSearchNode(decoder_hidden, n, currentList, decoded_t, new_score, n.leng + 1)
+                    # print("serching ====>", '{:<30}'.format(str(node.currentList)) , "  score : ", "{:.2f}".format(node.score))
+                    nextnodes.put(((-node.eval()),node))
+                
+            if endnodes.qsize() == beam:
+                break
+
+            while not nodes.empty():
+                nodes.get() 
+
+            if nextnodes.empty():
+                return 0
+
+            for _ in range(beam):
+                nodes.put((nextnodes.get()))
+
+            while not nextnodes.empty():
+                nextnodes.get() 
+    
+        # print("endnodes.qsize()", endnodes.qsize())
+
+        # candidates = []
+        # for top in range(endnodes.qsize()):
+        #     score, n = endnodes.get()
+        #     if top == 0:
+        #         best_score = score
+            
+        #     utterance = []
+        #     utterance.append(output_lang.index2word[n.wordid.item()])
+        #     while n.prevNode != None:
+        #         n = n.prevNode
+        #         utterance.append(output_lang.index2word[n.wordid.item()])
+        
+        #     utterance = utterance[::-1]
+        #     candidates.append(utterance)
+        score, n = endnodes.get()
+            
+        utterance = []
+        utterance.append(output_lang.index2word[n.wordid.item()])
+        while n.prevNode != None:
+            n = n.prevNode
+            utterance.append(output_lang.index2word[n.wordid.item()])
+        
+        utterance = utterance[::-1]
+        return utterance
+
+def evaluate_log_Dfs(encoder, decoder, sentence,time =5, max_length=MAX_LENGTH):
+    with torch.no_grad():
+        input_tensor = tensorFromSentence(input_lang, sentence)
+        input_length = input_tensor.size()[0]
+        encoder_hidden = encoder.initHidden()
+
+        encoder_outputs = torch.zeros(max_length, encoder.hidden_size, device=device)
+
+        for ei in range(input_length):
+            encoder_output, encoder_hidden = encoder(input_tensor[ei],
+                                                     encoder_hidden)
+            encoder_outputs[ei] += encoder_output[0, 0]
+
+        decoder_input = torch.tensor([[SOS_token]], device=device)  # SOS
+
+        decoder_hidden = encoder_hidden
+        currentList = [decoder_input.item()]
+
+        decoded_words = []
+        decoder_attentions = torch.zeros(max_length, max_length)
+
+        
+        node = BeamSearchNode(decoder_hidden, None, currentList,  decoder_input, 0, 0)
+
+
+
+
+
+        dfsclass = DFS(-float("inf"),encoder_outputs,decoder)
+        try:
+            with time_limit(time):
+                score, n = dfsclass.dfs(node)
+        except TimeoutException as e:
+            n = dfsclass.best_node
+            score = dfsclass.best_score
+            # print("OUT OF TIME LIMIT")
+
+        # score, n = dfsclass.dfs(node)
+        if n == None:
+            # print("None result from DFS-……-")
+            return ["none"]
+
+        # print("")
+        # print(str(n.currentList)+"score = "+str(score))
+        utterance = []
+        utterance.append(output_lang.index2word[n.wordid.item()])
+        while n.prevNode != None:
+            n = n.prevNode
+            utterance.append(output_lang.index2word[n.wordid.item()])
+        utterance = utterance[::-1]
+
+
+        return utterance
 """We can evaluate random sentences from the training set and print out the
 input, target, and output to make some subjective quality judgements:
 """
@@ -1571,10 +1893,101 @@ def evaluateRandomly_log(encoder, decoder, n=100):
         # ref.append('EOS')
         output_words = evaluate_log(encoder, decoder, pair[0])
         output_sentence = ' '.join(output_words[:-1])
-        candidates = []
-        candidates.append('SOS')
-        for item in output_sentence.split():
-            candidates.append(item)
+        # candidates = []
+        # candidates.append('SOS')
+        # for item in output_sentence.split():
+        #     candidates.append(item)
+        print(output_sentence)
+        # print(candidates)
+        # print([ref])
+        # bleu1 = sentence_bleu([ref],candidates, weights=(1, 0, 0, 0))
+        # bleu2 = sentence_bleu([ref],candidates, weights=(0.5, 0.5, 0, 0))
+        # bleu3 = sentence_bleu([ref],candidates, weights=(0.33, 0.33, 0.33, 0))
+        # bleu4 = sentence_bleu([ref],candidates, weights=(0.25, 0.25, 0.25, 0.25))
+        # bleu = sentence_bleu([ref],candidates)
+        # score1 += bleu1
+        # score2 += bleu2
+        # score3 += bleu3
+        # score4 += bleu4
+        # score5 += bleu
+        # print(bleu1)
+        # print(bleu2)
+        # print(bleu3)
+        # print(bleu4)
+        # print(bleu)
+
+    # print(score1/len(T_pairs))
+    # print(score2/len(T_pairs))
+    # print(score3/len(T_pairs))
+    # print(score4/len(T_pairs))
+    # print(score5/len(T_pairs))
+    return 
+
+def evaluateRandomly_log_Beam(encoder, decoder, n=100,beam=5):
+    # score1 = 0
+    # score2 = 0
+    # score3 = 0
+    # score4 = 0
+    # score5 = 0
+    for pair in T_pairs:
+        # print('>', pair[0])
+        # print('=', pair[1])
+        # ref = []
+        # ref.append('SOS')
+        # for item in pair[1].split():
+        #     ref.append(item)
+        # ref.append('EOS')
+        output_words = evaluate_log_Beam(encoder, decoder, pair[0],beam)
+        output_sentence = ' '.join(output_words[1:-1])
+        # candidates = []
+        # candidates.append('SOS')
+        # for item in output_sentence.split():
+        #     candidates.append(item)
+        print(output_sentence)
+        # print(candidates)
+        # print([ref])
+        # bleu1 = sentence_bleu([ref],candidates, weights=(1, 0, 0, 0))
+        # bleu2 = sentence_bleu([ref],candidates, weights=(0.5, 0.5, 0, 0))
+        # bleu3 = sentence_bleu([ref],candidates, weights=(0.33, 0.33, 0.33, 0))
+        # bleu4 = sentence_bleu([ref],candidates, weights=(0.25, 0.25, 0.25, 0.25))
+        # bleu = sentence_bleu([ref],candidates)
+        # score1 += bleu1
+        # score2 += bleu2
+        # score3 += bleu3
+        # score4 += bleu4
+        # score5 += bleu
+        # print(bleu1)
+        # print(bleu2)
+        # print(bleu3)
+        # print(bleu4)
+        # print(bleu)
+
+    # print(score1/len(T_pairs))
+    # print(score2/len(T_pairs))
+    # print(score3/len(T_pairs))
+    # print(score4/len(T_pairs))
+    # print(score5/len(T_pairs))
+    return 
+def evaluateRandomly_log_Dfs(encoder, decoder, n=100,time =5):
+    # score1 = 0
+    # score2 = 0
+    # score3 = 0
+    # score4 = 0
+    # score5 = 0
+    for pair in T_pairs:
+        # print('>', pair[0])
+        # print('=', pair[1])
+        # ref = []
+        # ref.append('SOS')
+        # for item in pair[1].split():
+        #     ref.append(item)
+        # ref.append('EOS')
+        output_words = evaluate_log_Dfs(encoder, decoder, pair[0],time)
+        output_sentence = ' '.join(output_words[1:-1])
+        # candidates = []
+        # candidates.append('SOS')
+        # for item in output_sentence.split():
+        #     candidates.append(item)
         print(output_sentence)
         # print(candidates)
         # print([ref])
@@ -1741,10 +2154,6 @@ attn_decoder1 = AttnDecoderRNN_log(hidden_size, output_lang.n_words, dropout_p=0
 # attn_decoder1.load_state_dict(torch.load("0/ONLYTEACH-pro_attn_decoder1__22.244829177856445_652.5906224422009_20.173337936401367_658.9654386139466"))
 # encoder1.load_state_dict(torch.load("0/NOTEACH-pro_encoder1__14.986833572387695_689.4869410266194_12.674849510192871_674.7815071154189"))
 # attn_decoder1.load_state_dict(torch.load("0/NOTEACH-pro_attn_decoder1__14.986833572387695_689.4869410266194_12.674849510192871_674.7815071154189"))
-# encoder1.load_state_dict(torch.load("3/ONLYTEACH-pro_encoder1__23.951189041137695_644.469241437078_21.292890548706055_629.604059978335"))
-# attn_decoder1.load_state_dict(torch.load("3/ONLYTEACH-pro_attn_decoder1__23.951189041137695_644.469241437078_21.292890548706055_629.604059978335"))
-trainIters_log(pairs, v_pairs, T_pairs,encoder1, attn_decoder1, 100*len(pairs), print_every=len(pairs), learning_rate=0.01, num = 3)
-# outfile = open('%d/noteach-pro-model-out-test.fr-en.en' % 0, 'w')
-# sys.stdout = outfile
-# evaluateRandomly_log(encoder1, attn_decoder1,100)
-# outfile.close()
+# encoder1.load_state_dict(torch.load("14/ONLYTEACH-pro_encoder1__24.18207550048828_648.737279042414_21.028303146362305_665.1957092220754_25.0"))
+# attn_decoder1.load_state_dict(torch.load("14/ONLYTEACH-pro_attn_decoder1__24.18207550048828_648.737279042414_21.028303146362305_665.1957092220754_25.0"))
+trainIters_log(pairs, v_pairs, T_pairs,encoder1, attn_decoder1, 100*len(pairs), print_every=len(pairs), learning_rate=0.01, num = 18)
