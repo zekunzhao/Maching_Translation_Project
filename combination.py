@@ -338,32 +338,37 @@ def readLangs(lang1, lang2, reverse=False, dataset = 'europarl-v7'):
     if dataset == 'original2':
 
         # Read the file and split into lines
-        lines = open('0/out-train.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+        lines = open('1/out-train.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
             read().strip().split('\n')
-        lines2 = open('0/out-train.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+        lines2 = open('1/out-train.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
             read().strip().split('\n')
 
         # Split every line into pairs and normalize
+        # print(len(lines))
+        # print(len(lines2))
         pairs1 = [[normalizeString(lines[item]),normalizeString(lines2[item])] for item in range(len(lines))]
         # Read the file and split into lines
-        lines = open('0/out-val.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+        lines = open('1/out-val.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
             read().strip().split('\n')
-        lines2 = open('0/out-val.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+        lines2 = open('1/out-val.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
             read().strip().split('\n')
-
+        # print(len(lines))
+        # print(len(lines2))
         # Split every line into pairs and normalize
         pairs2 = [[normalizeString(lines[item]),normalizeString(lines2[item])] for item in range(len(lines))]
 
         # Read the file and split into lines
-        lines = open('0/out-test.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+        lines = open('1/out-test.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
             read().strip().split('\n')
-        lines2 = open('0/out-test.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+        lines2 = open('1/out-test.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
             read().strip().split('\n')
-
+        # print(len(lines))
+        # print(len(lines2))
         # Split every line into pairs and normalize
         pairs3 = [[normalizeString(lines[item]),normalizeString(lines2[item])] for item in range(len(lines))]
 
         pairs = pairs1+pairs2+pairs3
+        # print(len(pairs))
         print("reading new way")
 
     # if dataset == 'train':
@@ -427,9 +432,9 @@ def readTestdata(lang1, lang2, reverse=False, dataset = 'train'):
     if dataset == 'train':
 
         # Read the file and split into lines
-        lines = open('0/out-train.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+        lines = open('1/out-train.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
             read().strip().split('\n')
-        lines2 = open('0/out-train.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+        lines2 = open('1/out-train.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
             read().strip().split('\n')
 
         # Split every line into pairs and normalize
@@ -437,9 +442,9 @@ def readTestdata(lang1, lang2, reverse=False, dataset = 'train'):
     if dataset == 'val':
 
         # Read the file and split into lines
-        lines = open('0/out-val.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+        lines = open('1/out-val.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
             read().strip().split('\n')
-        lines2 = open('0/out-val.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+        lines2 = open('1/out-val.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
             read().strip().split('\n')
 
         # Split every line into pairs and normalize
@@ -448,9 +453,9 @@ def readTestdata(lang1, lang2, reverse=False, dataset = 'train'):
     if dataset == 'test':
 
         # Read the file and split into lines
-        lines = open('0/out-test.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
+        lines = open('1/out-test.%s-%s.%s' % (lang1, lang2,lang2), encoding='utf-8').\
             read().strip().split('\n')
-        lines2 = open('0/out-test.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
+        lines2 = open('1/out-test.%s-%s.%s' % (lang1, lang2,lang1), encoding='utf-8').\
             read().strip().split('\n')
 
         # Split every line into pairs and normalize
@@ -500,7 +505,7 @@ def filterPairs(pairs):
 def prepareData(lang1, lang2, reverse=False,dataset='europarl-v7'):
     input_lang, output_lang, pairs = readLangs(lang1, lang2, reverse,dataset)
     print("Read %s sentence pairs" % len(pairs))
-    pairs = filterPairs(pairs)
+    # pairs = filterPairs(pairs)
     print("Trimmed to %s sentence pairs" % len(pairs))
     print("Counting words...")
     for pair in pairs:
@@ -524,7 +529,8 @@ else :
     print("dir_num existed!")
 
 # input_lang, output_lang, pairs = prepareData('fr', 'en', True)
-input_lang, output_lang, pairs = prepareData('eng', 'fra', True,'original2')
+input_lang, output_lang, pairs = prepareData('fr', 'en', True,'original2')
+# input_lang, output_lang, pairs = prepareData('eng', 'fra', True,'original')
 def partition (list_in, n):
     random.shuffle(list_in)
     return list_in[:int(n*len(list_in))],list_in[int(n*len(list_in)):]
