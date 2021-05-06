@@ -1,0 +1,1730 @@
+nohup: ignoring input
+dir_num existed!
+Reading lines...
+Read 135842 sentence pairs
+Trimmed to 10599 sentence pairs
+Counting words...
+Counted words:
+fra 4345
+eng 2803
+Reading lines...
+Reading lines...
+Reading lines...
+/data/users/zzhao99/miniconda3/envs/myenv/lib/python3.9/site-packages/nltk/translate/bleu_score.py:516: UserWarning: 
+The hypothesis contains 0 counts of 3-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/data/users/zzhao99/miniconda3/envs/myenv/lib/python3.9/site-packages/nltk/translate/bleu_score.py:516: UserWarning: 
+The hypothesis contains 0 counts of 4-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+/data/users/zzhao99/miniconda3/envs/myenv/lib/python3.9/site-packages/nltk/translate/bleu_score.py:516: UserWarning: 
+The hypothesis contains 0 counts of 2-gram overlaps.
+Therefore the BLEU score evaluates to 0, independently of
+how many N-gram overlaps of lower order it contains.
+Consider using lower n-gram order or use SmoothingFunction()
+  warnings.warn(_msg)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 14.9 59.3/26.3/10.4/3.4 (BP = 0.971 ratio = 0.971 hyp_len = 6176 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 15.9 63.7/29.1/12.2/4.7 (BP = 0.881 ratio = 0.888 hyp_len = 5645 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 15.4 65.0/29.7/12.2/4.5 (BP = 0.849 ratio = 0.860 hyp_len = 5467 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 15.4 65.3/30.0/12.4/4.6 (BP = 0.843 ratio = 0.854 hyp_len = 5433 ref_len = 6359)
+26m 13s (- 2595m 34s) (8479 1%) 17.0241  26.4434
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 25.4 63.4/33.2/18.4/10.8 (BP = 1.000 ratio = 1.007 hyp_len = 6401 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 26.0 67.3/36.0/20.7/12.7 (BP = 0.920 ratio = 0.923 hyp_len = 5872 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 25.7 67.9/36.2/20.9/13.0 (BP = 0.897 ratio = 0.902 hyp_len = 5737 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 25.6 68.0/36.3/20.9/13.1 (BP = 0.891 ratio = 0.897 hyp_len = 5702 ref_len = 6359)
+50m 36s (- 2479m 35s) (16958 2%) 11.4246  23.7654
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 29.7 64.8/36.7/22.5/14.6 (BP = 1.000 ratio = 1.031 hyp_len = 6554 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 31.4 68.5/39.6/24.8/17.0 (BP = 0.960 ratio = 0.961 hyp_len = 6111 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 31.7 69.4/40.4/25.6/17.8 (BP = 0.944 ratio = 0.945 hyp_len = 6010 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 31.7 69.7/40.6/25.7/17.9 (BP = 0.938 ratio = 0.940 hyp_len = 5979 ref_len = 6359)
+74m 27s (- 2407m 25s) (25437 3%) 8.3894  23.5361
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 35.3 68.0/41.0/27.5/20.3 (BP = 1.000 ratio = 1.005 hyp_len = 6389 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 37.9 72.5/45.4/32.0/25.3 (BP = 0.938 ratio = 0.939 hyp_len = 5974 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 38.2 73.8/46.5/32.9/26.3 (BP = 0.921 ratio = 0.924 hyp_len = 5876 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 38.2 73.8/46.6/32.9/26.4 (BP = 0.919 ratio = 0.922 hyp_len = 5866 ref_len = 6359)
+97m 12s (- 2332m 55s) (33916 4%) 6.3971  22.2683
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 40.5 71.2/46.0/32.9/25.7 (BP = 0.994 ratio = 0.994 hyp_len = 6319 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 41.2 74.1/48.5/35.1/28.2 (BP = 0.949 ratio = 0.950 hyp_len = 6044 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 41.6 74.6/49.1/35.8/29.0 (BP = 0.941 ratio = 0.943 hyp_len = 5994 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 41.6 74.7/49.2/35.9/29.1 (BP = 0.939 ratio = 0.941 hyp_len = 5983 ref_len = 6359)
+119m 16s (- 2266m 6s) (42395 5%) 4.9572  22.5783
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 43.2 72.1/47.7/35.2/28.7 (BP = 1.000 ratio = 1.001 hyp_len = 6366 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 46.4 76.1/52.4/40.2/34.3 (BP = 0.958 ratio = 0.959 hyp_len = 6097 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 46.5 76.5/52.9/40.6/34.7 (BP = 0.951 ratio = 0.952 hyp_len = 6056 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 46.5 76.5/52.9/40.6/34.8 (BP = 0.952 ratio = 0.953 hyp_len = 6058 ref_len = 6359)
+142m 49s (- 2237m 29s) (50874 6%) 3.6976  21.3824
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 43.1 71.9/47.7/35.2/28.7 (BP = 1.000 ratio = 1.001 hyp_len = 6367 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 45.0 75.5/51.2/38.7/32.7 (BP = 0.957 ratio = 0.958 hyp_len = 6089 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 44.9 75.9/51.6/39.0/33.0 (BP = 0.948 ratio = 0.949 hyp_len = 6034 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 44.9 75.9/51.6/39.0/33.0 (BP = 0.947 ratio = 0.949 hyp_len = 6032 ref_len = 6359)
+165m 30s (- 2198m 47s) (59353 7%) 2.8888  22.5627
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 46.4 73.8/50.6/38.8/32.7 (BP = 0.995 ratio = 0.995 hyp_len = 6325 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.0 77.0/54.0/42.2/36.5 (BP = 0.954 ratio = 0.955 hyp_len = 6076 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.2 77.3/54.4/42.8/37.2 (BP = 0.946 ratio = 0.948 hyp_len = 6026 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.2 77.4/54.5/42.9/37.4 (BP = 0.946 ratio = 0.947 hyp_len = 6025 ref_len = 6359)
+185m 13s (- 2130m 1s) (67832 8%) 2.2106  21.8412
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 45.7 72.9/50.0/38.1/31.5 (BP = 1.000 ratio = 1.016 hyp_len = 6460 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.7 76.3/53.7/41.9/36.3 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.8 76.6/54.0/42.2/36.6 (BP = 0.970 ratio = 0.970 hyp_len = 6168 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.9 76.7/54.1/42.4/36.8 (BP = 0.969 ratio = 0.969 hyp_len = 6165 ref_len = 6359)
+205m 49s (- 2081m 4s) (76311 9%) 1.6324  21.7303
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 48.8 74.9/52.8/41.1/34.9 (BP = 1.000 ratio = 1.004 hyp_len = 6387 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.1 77.5/55.9/44.6/39.0 (BP = 0.976 ratio = 0.976 hyp_len = 6208 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.1 77.6/56.0/44.8/39.3 (BP = 0.971 ratio = 0.972 hyp_len = 6180 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.1 77.6/56.0/44.8/39.3 (BP = 0.971 ratio = 0.972 hyp_len = 6178 ref_len = 6359)
+226m 53s (- 2042m 3s) (84790 10%) 1.3340  22.5431
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 49.8 75.3/53.5/42.0/36.3 (BP = 1.000 ratio = 1.001 hyp_len = 6364 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.7 78.5/56.9/45.7/40.4 (BP = 0.965 ratio = 0.966 hyp_len = 6140 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.8 78.6/57.1/45.9/40.7 (BP = 0.962 ratio = 0.963 hyp_len = 6122 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.8 78.6/57.1/45.9/40.6 (BP = 0.963 ratio = 0.963 hyp_len = 6126 ref_len = 6359)
+248m 52s (- 2013m 35s) (93269 11%) 0.9998  22.7635
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 50.6 76.0/54.4/42.9/36.8 (BP = 1.000 ratio = 1.000 hyp_len = 6359 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.6 78.6/57.8/46.7/41.2 (BP = 0.968 ratio = 0.969 hyp_len = 6161 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.8 78.8/58.0/47.0/41.6 (BP = 0.965 ratio = 0.966 hyp_len = 6142 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.8 78.8/58.0/47.0/41.6 (BP = 0.965 ratio = 0.966 hyp_len = 6142 ref_len = 6359)
+270m 19s (- 1982m 25s) (101748 12%) 0.8204  22.3143
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 50.9 76.4/55.0/44.0/38.1 (BP = 0.989 ratio = 0.989 hyp_len = 6287 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.1 78.6/57.3/46.5/41.1 (BP = 0.962 ratio = 0.963 hyp_len = 6123 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.2 78.7/57.6/46.8/41.4 (BP = 0.959 ratio = 0.960 hyp_len = 6104 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.2 78.7/57.5/46.7/41.4 (BP = 0.960 ratio = 0.961 hyp_len = 6108 ref_len = 6359)
+292m 25s (- 1957m 1s) (110227 13%) 0.6727  22.4726
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.5 76.8/55.5/44.3/38.7 (BP = 0.990 ratio = 0.990 hyp_len = 6295 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 79.2/58.4/47.4/42.0 (BP = 0.964 ratio = 0.964 hyp_len = 6133 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 79.4/58.6/47.7/42.3 (BP = 0.961 ratio = 0.962 hyp_len = 6116 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 79.4/58.6/47.7/42.3 (BP = 0.961 ratio = 0.962 hyp_len = 6117 ref_len = 6359)
+314m 50s (- 1934m 1s) (118706 14%) 0.5530  22.4865
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 51.8 76.5/55.3/44.2/38.4 (BP = 1.000 ratio = 1.002 hyp_len = 6372 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 78.6/57.7/46.8/41.5 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 78.7/57.8/46.9/41.6 (BP = 0.973 ratio = 0.973 hyp_len = 6190 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 78.7/57.8/46.9/41.6 (BP = 0.973 ratio = 0.973 hyp_len = 6190 ref_len = 6359)
+337m 22s (- 1911m 49s) (127185 15%) 0.4404  23.3388
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.3 77.3/56.3/45.1/39.3 (BP = 0.992 ratio = 0.992 hyp_len = 6306 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.8 79.3/58.9/47.9/42.7 (BP = 0.967 ratio = 0.967 hyp_len = 6152 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 79.5/59.1/48.1/43.0 (BP = 0.965 ratio = 0.965 hyp_len = 6139 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 79.5/59.1/48.1/43.0 (BP = 0.965 ratio = 0.966 hyp_len = 6140 ref_len = 6359)
+357m 21s (- 1876m 9s) (135664 16%) 0.3845  22.4210
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.7 77.3/57.1/46.4/40.8 (BP = 0.999 ratio = 0.999 hyp_len = 6355 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 79.1/58.7/48.1/43.1 (BP = 0.974 ratio = 0.974 hyp_len = 6193 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.2/59.0/48.4/43.5 (BP = 0.971 ratio = 0.971 hyp_len = 6176 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.2/59.0/48.4/43.5 (BP = 0.971 ratio = 0.971 hyp_len = 6176 ref_len = 6359)
+379m 58s (- 1855m 9s) (144143 17%) 0.3179  23.2236
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.1/56.4/45.7/40.1 (BP = 0.999 ratio = 0.999 hyp_len = 6354 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.3/59.1/48.6/43.4 (BP = 0.973 ratio = 0.973 hyp_len = 6189 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.5/59.3/48.7/43.6 (BP = 0.970 ratio = 0.970 hyp_len = 6168 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.5/59.3/48.8/43.6 (BP = 0.970 ratio = 0.970 hyp_len = 6171 ref_len = 6359)
+403m 48s (- 1839m 34s) (152622 18%) 0.3054  23.5411
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.5 77.2/56.9/46.1/40.6 (BP = 1.000 ratio = 1.000 hyp_len = 6357 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 78.9/58.8/48.4/43.3 (BP = 0.978 ratio = 0.978 hyp_len = 6218 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 78.9/58.9/48.5/43.5 (BP = 0.978 ratio = 0.978 hyp_len = 6218 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 78.9/58.9/48.5/43.4 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+428m 6s (- 1825m 5s) (161101 19%) 0.2657  23.6831
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.1/56.6/45.7/40.0 (BP = 0.997 ratio = 0.997 hyp_len = 6343 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.1/58.7/48.2/42.8 (BP = 0.975 ratio = 0.976 hyp_len = 6204 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.4/59.0/48.4/43.0 (BP = 0.972 ratio = 0.972 hyp_len = 6184 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.3/59.0/48.4/43.0 (BP = 0.972 ratio = 0.973 hyp_len = 6186 ref_len = 6359)
+452m 20s (- 1809m 20s) (169580 20%) 0.2680  23.7242
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.5 76.7/55.8/45.1/39.4 (BP = 1.000 ratio = 1.004 hyp_len = 6382 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.8 78.7/58.1/47.4/42.1 (BP = 0.979 ratio = 0.980 hyp_len = 6229 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 78.9/58.4/47.8/42.6 (BP = 0.975 ratio = 0.975 hyp_len = 6199 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 78.9/58.3/47.7/42.5 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+476m 49s (- 1793m 44s) (178059 21%) 0.2390  23.3504
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.8 77.2/56.4/45.4/40.1 (BP = 0.996 ratio = 0.996 hyp_len = 6333 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 79.4/59.0/48.0/42.9 (BP = 0.972 ratio = 0.972 hyp_len = 6181 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 79.5/59.1/48.1/43.1 (BP = 0.970 ratio = 0.970 hyp_len = 6168 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 79.5/59.1/48.1/43.0 (BP = 0.970 ratio = 0.970 hyp_len = 6171 ref_len = 6359)
+500m 56s (- 1776m 2s) (186538 22%) 0.2354  24.2807
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.0/56.6/45.7/40.1 (BP = 0.998 ratio = 0.998 hyp_len = 6344 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.4/59.2/48.3/43.1 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.5/59.4/48.5/43.3 (BP = 0.973 ratio = 0.973 hyp_len = 6189 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.5/59.3/48.4/43.2 (BP = 0.974 ratio = 0.974 hyp_len = 6193 ref_len = 6359)
+524m 56s (- 1757m 26s) (195017 23%) 0.2250  23.8707
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.2/56.7/45.8/40.1 (BP = 0.999 ratio = 0.999 hyp_len = 6350 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.1/42.9 (BP = 0.976 ratio = 0.976 hyp_len = 6209 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 79.0/58.8/48.1/42.8 (BP = 0.974 ratio = 0.974 hyp_len = 6196 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.9/48.2/43.0 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+548m 35s (- 1737m 10s) (203496 24%) 0.2264  23.7232
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.2/56.7/46.0/40.5 (BP = 0.994 ratio = 0.994 hyp_len = 6322 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.5/59.5/49.0/43.8 (BP = 0.972 ratio = 0.972 hyp_len = 6182 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.7/59.6/49.1/43.9 (BP = 0.969 ratio = 0.970 hyp_len = 6166 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.6/59.6/49.1/43.8 (BP = 0.970 ratio = 0.970 hyp_len = 6170 ref_len = 6359)
+572m 4s (- 1716m 12s) (211975 25%) 0.2192  23.5580
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.5 76.8/56.0/45.4/40.1 (BP = 0.993 ratio = 0.993 hyp_len = 6313 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 78.9/58.3/47.9/42.9 (BP = 0.973 ratio = 0.973 hyp_len = 6188 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.8 78.9/58.4/47.9/43.0 (BP = 0.970 ratio = 0.971 hyp_len = 6172 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.8 78.8/58.3/47.8/42.9 (BP = 0.971 ratio = 0.972 hyp_len = 6179 ref_len = 6359)
+595m 41s (- 1695m 25s) (220454 26%) 0.2028  23.7897
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.6 77.2/56.8/46.2/40.7 (BP = 1.000 ratio = 1.000 hyp_len = 6357 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.2/59.1/48.7/43.6 (BP = 0.977 ratio = 0.977 hyp_len = 6212 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.2/48.7/43.7 (BP = 0.974 ratio = 0.975 hyp_len = 6198 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.2/48.7/43.7 (BP = 0.974 ratio = 0.975 hyp_len = 6198 ref_len = 6359)
+618m 33s (- 1672m 24s) (228933 27%) 0.1985  23.6690
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.5/56.9/46.0/40.6 (BP = 0.995 ratio = 0.995 hyp_len = 6326 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 78.9/58.4/47.7/42.8 (BP = 0.973 ratio = 0.973 hyp_len = 6188 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.0 79.1/58.7/48.1/43.2 (BP = 0.969 ratio = 0.970 hyp_len = 6167 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.0 79.1/58.7/48.0/43.1 (BP = 0.970 ratio = 0.970 hyp_len = 6171 ref_len = 6359)
+638m 10s (- 1641m 2s) (237412 28%) 0.1910  23.8865
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 77.9/57.7/47.0/41.5 (BP = 0.996 ratio = 0.996 hyp_len = 6333 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.5/59.5/48.9/43.7 (BP = 0.973 ratio = 0.973 hyp_len = 6187 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.5/59.5/48.8/43.7 (BP = 0.970 ratio = 0.970 hyp_len = 6171 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.5/59.5/48.9/43.8 (BP = 0.971 ratio = 0.972 hyp_len = 6178 ref_len = 6359)
+657m 2s (- 1608m 37s) (245891 28%) 0.2014  23.9572
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.3/56.8/45.9/40.3 (BP = 0.998 ratio = 0.998 hyp_len = 6347 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.5/59.4/48.6/43.4 (BP = 0.976 ratio = 0.977 hyp_len = 6210 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.7/59.5/48.7/43.5 (BP = 0.972 ratio = 0.973 hyp_len = 6185 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.6/59.4/48.7/43.4 (BP = 0.974 ratio = 0.974 hyp_len = 6193 ref_len = 6359)
+676m 4s (- 1577m 30s) (254370 30%) 0.2001  24.4298
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.7/57.1/46.4/40.7 (BP = 0.992 ratio = 0.992 hyp_len = 6306 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.4/59.1/48.3/43.1 (BP = 0.972 ratio = 0.972 hyp_len = 6183 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.6/59.3/48.6/43.3 (BP = 0.969 ratio = 0.970 hyp_len = 6167 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.6/59.3/48.5/43.3 (BP = 0.970 ratio = 0.970 hyp_len = 6171 ref_len = 6359)
+695m 17s (- 1547m 34s) (262849 31%) 0.1781  24.0271
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.8 77.6/57.1/46.7/41.6 (BP = 0.994 ratio = 0.994 hyp_len = 6318 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.1 79.5/59.5/49.0/44.3 (BP = 0.973 ratio = 0.974 hyp_len = 6192 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.2 79.8/59.7/49.3/44.6 (BP = 0.970 ratio = 0.971 hyp_len = 6174 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.2 79.7/59.7/49.2/44.5 (BP = 0.971 ratio = 0.972 hyp_len = 6180 ref_len = 6359)
+714m 33s (- 1518m 26s) (271328 32%) 0.1864  24.3370
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.6 77.5/57.0/46.4/40.8 (BP = 0.997 ratio = 0.997 hyp_len = 6338 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.1/48.7/43.6 (BP = 0.975 ratio = 0.976 hyp_len = 6204 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.3/48.9/43.8 (BP = 0.973 ratio = 0.973 hyp_len = 6187 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.3/48.9/43.9 (BP = 0.973 ratio = 0.974 hyp_len = 6191 ref_len = 6359)
+733m 41s (- 1489m 36s) (279807 33%) 0.1805  24.2751
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.5/56.9/46.1/40.6 (BP = 0.996 ratio = 0.996 hyp_len = 6334 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.0/42.8 (BP = 0.977 ratio = 0.977 hyp_len = 6214 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.2/58.9/48.2/43.1 (BP = 0.974 ratio = 0.975 hyp_len = 6197 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.1/58.8/48.2/43.0 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+752m 46s (- 1461m 16s) (288286 34%) 0.1873  24.4196
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.2/56.6/45.9/40.3 (BP = 0.996 ratio = 0.996 hyp_len = 6334 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.7/48.3/43.3 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.8/48.4/43.4 (BP = 0.974 ratio = 0.974 hyp_len = 6194 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.8/48.4/43.4 (BP = 0.974 ratio = 0.974 hyp_len = 6194 ref_len = 6359)
+772m 8s (- 1433m 58s) (296765 35%) 0.1795  24.7062
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.7 77.5/57.1/46.7/41.3 (BP = 0.993 ratio = 0.993 hyp_len = 6313 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.3/48.9/43.8 (BP = 0.974 ratio = 0.974 hyp_len = 6194 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.4/59.4/49.1/44.0 (BP = 0.973 ratio = 0.973 hyp_len = 6187 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.4/59.4/49.0/43.9 (BP = 0.973 ratio = 0.974 hyp_len = 6191 ref_len = 6359)
+791m 9s (- 1406m 30s) (305244 36%) 0.1783  24.8866
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.4/56.9/46.1/40.7 (BP = 0.992 ratio = 0.992 hyp_len = 6310 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.3/59.2/48.4/43.3 (BP = 0.974 ratio = 0.974 hyp_len = 6195 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.4/59.4/48.7/43.6 (BP = 0.972 ratio = 0.972 hyp_len = 6182 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.4/59.3/48.6/43.5 (BP = 0.972 ratio = 0.973 hyp_len = 6186 ref_len = 6359)
+810m 27s (- 1379m 58s) (313723 37%) 0.1826  24.6382
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.0/56.6/46.2/40.7 (BP = 0.997 ratio = 0.997 hyp_len = 6340 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.0/58.8/48.6/43.4 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.0/58.8/48.5/43.3 (BP = 0.975 ratio = 0.975 hyp_len = 6199 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.0/58.8/48.6/43.4 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+829m 28s (- 1353m 21s) (322202 38%) 0.1662  24.7385
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.4/56.9/46.1/40.8 (BP = 0.996 ratio = 0.996 hyp_len = 6333 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.1/59.0/48.3/43.2 (BP = 0.978 ratio = 0.978 hyp_len = 6220 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.3/59.2/48.5/43.4 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.2/59.1/48.4/43.4 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+848m 47s (- 1327m 36s) (330681 39%) 0.1765  24.8059
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.5/57.1/46.3/40.7 (BP = 0.994 ratio = 0.994 hyp_len = 6324 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.2/59.2/48.4/43.0 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.4/59.5/48.7/43.4 (BP = 0.973 ratio = 0.973 hyp_len = 6188 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.3/59.4/48.6/43.3 (BP = 0.974 ratio = 0.974 hyp_len = 6194 ref_len = 6359)
+868m 19s (- 1302m 28s) (339160 40%) 0.1655  24.7606
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.5 77.6/57.2/46.4/40.8 (BP = 0.994 ratio = 0.994 hyp_len = 6320 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.2/59.2/48.5/43.2 (BP = 0.976 ratio = 0.976 hyp_len = 6209 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.4/59.3/48.7/43.4 (BP = 0.974 ratio = 0.974 hyp_len = 6196 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.3/59.3/48.7/43.3 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+888m 26s (- 1278m 29s) (347639 41%) 0.1817  24.9158
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.1/56.7/45.8/40.4 (BP = 1.000 ratio = 1.001 hyp_len = 6367 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 78.9/59.0/48.4/43.4 (BP = 0.979 ratio = 0.979 hyp_len = 6227 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.2/59.3/48.7/43.7 (BP = 0.975 ratio = 0.976 hyp_len = 6204 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.1/59.2/48.6/43.6 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+909m 24s (- 1255m 51s) (356118 42%) 0.1817  24.7996
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.0/56.4/45.5/39.9 (BP = 1.000 ratio = 1.000 hyp_len = 6359 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.0 78.8/58.6/47.7/42.3 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.0 78.8/58.6/47.8/42.5 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.0 78.8/58.5/47.8/42.4 (BP = 0.976 ratio = 0.977 hyp_len = 6211 ref_len = 6359)
+932m 12s (- 1235m 43s) (364597 43%) 0.1675  24.9523
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.5 77.6/57.0/46.2/40.8 (BP = 0.994 ratio = 0.994 hyp_len = 6324 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.4/59.1/48.5/43.5 (BP = 0.973 ratio = 0.974 hyp_len = 6192 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.5/59.3/48.7/43.7 (BP = 0.971 ratio = 0.971 hyp_len = 6177 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.5/59.2/48.6/43.6 (BP = 0.972 ratio = 0.972 hyp_len = 6181 ref_len = 6359)
+955m 10s (- 1215m 40s) (373076 44%) 0.1712  25.1338
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 76.9/56.3/45.8/40.4 (BP = 0.997 ratio = 0.997 hyp_len = 6340 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.8/58.4/48.0/43.0 (BP = 0.977 ratio = 0.977 hyp_len = 6212 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.9/58.5/48.2/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.9/58.5/48.2/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+978m 37s (- 1196m 6s) (381555 45%) 0.1656  25.3336
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 76.9/56.5/46.0/40.5 (BP = 0.998 ratio = 0.998 hyp_len = 6346 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.8/58.6/48.0/42.9 (BP = 0.976 ratio = 0.976 hyp_len = 6209 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.8/58.5/48.0/43.0 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.8/58.5/48.0/43.0 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+1001m 47s (- 1176m 0s) (390034 46%) 0.1636  25.1575
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 76.9/56.4/45.6/39.9 (BP = 1.000 ratio = 1.002 hyp_len = 6374 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.6/48.0/42.8 (BP = 0.977 ratio = 0.977 hyp_len = 6213 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.1/42.9 (BP = 0.976 ratio = 0.977 hyp_len = 6210 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.1/42.9 (BP = 0.976 ratio = 0.977 hyp_len = 6210 ref_len = 6359)
+1024m 51s (- 1155m 41s) (398513 47%) 0.1613  25.2671
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.2/56.5/45.7/40.2 (BP = 0.997 ratio = 0.997 hyp_len = 6339 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.7/58.5/47.8/42.4 (BP = 0.980 ratio = 0.980 hyp_len = 6234 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 79.0/58.7/47.9/42.6 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.9/58.6/47.9/42.6 (BP = 0.979 ratio = 0.979 hyp_len = 6225 ref_len = 6359)
+1049m 17s (- 1136m 44s) (406992 48%) 0.1630  24.6452
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.2/56.8/46.1/40.7 (BP = 0.997 ratio = 0.997 hyp_len = 6342 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.8/58.6/47.9/42.7 (BP = 0.978 ratio = 0.978 hyp_len = 6220 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.7/48.1/43.0 (BP = 0.975 ratio = 0.976 hyp_len = 6204 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.6/48.0/42.9 (BP = 0.976 ratio = 0.976 hyp_len = 6208 ref_len = 6359)
+1073m 34s (- 1117m 23s) (415471 49%) 0.1597  24.7855
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.0/56.4/45.6/40.2 (BP = 0.997 ratio = 0.997 hyp_len = 6342 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 79.0/58.7/48.0/42.7 (BP = 0.977 ratio = 0.977 hyp_len = 6212 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.2/58.9/48.2/43.0 (BP = 0.974 ratio = 0.974 hyp_len = 6196 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.1/58.9/48.2/42.9 (BP = 0.975 ratio = 0.975 hyp_len = 6202 ref_len = 6359)
+1096m 33s (- 1096m 33s) (423950 50%) 0.1670  25.1397
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.2/56.7/46.0/40.5 (BP = 0.995 ratio = 0.995 hyp_len = 6328 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.1/58.8/48.2/43.0 (BP = 0.978 ratio = 0.978 hyp_len = 6220 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.3/59.1/48.5/43.3 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.3/59.1/48.5/43.3 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+1122m 1s (- 1078m 1s) (432429 51%) 0.1668  25.0976
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.4/57.0/46.1/40.7 (BP = 0.997 ratio = 0.997 hyp_len = 6337 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.0/48.5/43.4 (BP = 0.977 ratio = 0.977 hyp_len = 6214 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.3/59.1/48.6/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.2/59.1/48.6/43.6 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+1147m 44s (- 1059m 27s) (440908 52%) 0.1614  25.5534
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.1/56.7/45.9/40.3 (BP = 1.000 ratio = 1.001 hyp_len = 6366 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 78.8/58.8/48.3/43.0 (BP = 0.980 ratio = 0.981 hyp_len = 6236 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.0/59.0/48.5/43.2 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 78.9/59.0/48.4/43.2 (BP = 0.979 ratio = 0.979 hyp_len = 6224 ref_len = 6359)
+1173m 38s (- 1040m 46s) (449387 53%) 0.1633  24.8841
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.6 76.7/55.9/45.2/39.7 (BP = 0.999 ratio = 0.999 hyp_len = 6355 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.6/58.2/47.9/42.6 (BP = 0.980 ratio = 0.980 hyp_len = 6232 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.6/58.3/48.0/42.7 (BP = 0.979 ratio = 0.979 hyp_len = 6224 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.5/58.2/48.0/42.7 (BP = 0.979 ratio = 0.979 hyp_len = 6228 ref_len = 6359)
+1199m 30s (- 1021m 48s) (457866 54%) 0.1688  25.3288
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.7 77.2/56.9/46.4/41.2 (BP = 0.997 ratio = 0.997 hyp_len = 6340 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.2 79.4/59.7/49.1/44.2 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.2 79.5/59.7/49.2/44.3 (BP = 0.974 ratio = 0.974 hyp_len = 6195 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.2 79.4/59.7/49.2/44.2 (BP = 0.975 ratio = 0.975 hyp_len = 6199 ref_len = 6359)
+1225m 13s (- 1002m 27s) (466345 55%) 0.1654  25.1160
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.3/56.8/46.1/40.6 (BP = 0.998 ratio = 0.998 hyp_len = 6348 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.6/48.2/43.2 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.8/48.4/43.4 (BP = 0.973 ratio = 0.974 hyp_len = 6191 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.8/48.3/43.3 (BP = 0.974 ratio = 0.974 hyp_len = 6195 ref_len = 6359)
+1251m 1s (- 982m 57s) (474824 56%) 0.1660  25.1985
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.5 77.1/56.9/46.1/40.6 (BP = 0.998 ratio = 0.998 hyp_len = 6348 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.0/58.9/48.3/43.3 (BP = 0.978 ratio = 0.979 hyp_len = 6223 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.0/59.0/48.4/43.4 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.0/59.0/48.4/43.4 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+1276m 44s (- 963m 9s) (483303 56%) 0.1567  25.5356
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 77.8/57.5/46.6/41.3 (BP = 0.994 ratio = 0.994 hyp_len = 6324 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.2/59.2/48.6/43.5 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.4/48.7/43.7 (BP = 0.976 ratio = 0.976 hyp_len = 6208 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.4/48.7/43.6 (BP = 0.977 ratio = 0.977 hyp_len = 6212 ref_len = 6359)
+1302m 28s (- 943m 10s) (491782 57%) 0.1574  25.3133
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 77.6/57.4/46.7/41.2 (BP = 0.996 ratio = 0.996 hyp_len = 6335 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.3/48.9/43.9 (BP = 0.973 ratio = 0.973 hyp_len = 6187 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.4/59.4/49.0/44.0 (BP = 0.972 ratio = 0.972 hyp_len = 6182 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.4/49.0/43.9 (BP = 0.972 ratio = 0.973 hyp_len = 6186 ref_len = 6359)
+1328m 16s (- 923m 2s) (500261 59%) 0.1515  25.6887
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.7 77.4/57.2/46.7/41.3 (BP = 0.993 ratio = 0.993 hyp_len = 6315 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.3/49.0/44.1 (BP = 0.972 ratio = 0.972 hyp_len = 6181 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 55.0 79.4/59.5/49.2/44.3 (BP = 0.970 ratio = 0.971 hyp_len = 6172 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.4/59.5/49.2/44.2 (BP = 0.971 ratio = 0.971 hyp_len = 6176 ref_len = 6359)
+1353m 40s (- 902m 27s) (508740 60%) 0.1545  25.7488
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.8 77.2/57.0/46.4/41.1 (BP = 1.000 ratio = 1.000 hyp_len = 6356 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.2/59.1/48.6/43.5 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.0/59.1/48.6/43.6 (BP = 0.978 ratio = 0.978 hyp_len = 6220 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.0/59.0/48.6/43.5 (BP = 0.979 ratio = 0.979 hyp_len = 6224 ref_len = 6359)
+1378m 57s (- 881m 37s) (517219 61%) 0.1523  25.7692
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.6 77.3/57.0/46.4/41.0 (BP = 0.997 ratio = 0.997 hyp_len = 6337 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.7/48.2/43.1 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.8/48.4/43.3 (BP = 0.974 ratio = 0.974 hyp_len = 6195 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.7/48.3/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+1403m 16s (- 860m 4s) (525698 62%) 0.1463  26.1333
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.9 76.9/56.2/45.4/39.9 (BP = 1.000 ratio = 1.000 hyp_len = 6356 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.8/58.6/47.9/42.7 (BP = 0.980 ratio = 0.981 hyp_len = 6235 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.7/48.1/42.9 (BP = 0.979 ratio = 0.979 hyp_len = 6228 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.8/58.6/48.0/42.9 (BP = 0.980 ratio = 0.980 hyp_len = 6232 ref_len = 6359)
+1427m 46s (- 838m 32s) (534177 63%) 0.1457  25.9411
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.6 77.4/57.1/46.4/40.7 (BP = 0.997 ratio = 0.997 hyp_len = 6343 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.2/59.0/48.3/42.9 (BP = 0.978 ratio = 0.979 hyp_len = 6223 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.3/59.2/48.6/43.1 (BP = 0.977 ratio = 0.977 hyp_len = 6213 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.2/59.1/48.4/43.0 (BP = 0.979 ratio = 0.979 hyp_len = 6224 ref_len = 6359)
+1452m 21s (- 816m 56s) (542656 64%) 0.1582  25.9928
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.1/56.7/45.9/40.6 (BP = 0.999 ratio = 0.999 hyp_len = 6353 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.8/58.4/47.7/42.8 (BP = 0.977 ratio = 0.978 hyp_len = 6217 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.8/58.6/47.9/43.0 (BP = 0.977 ratio = 0.978 hyp_len = 6216 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.8/58.5/47.8/42.9 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+1476m 54s (- 795m 15s) (551135 65%) 0.1530  25.5835
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.2/56.8/45.9/40.2 (BP = 0.997 ratio = 0.997 hyp_len = 6338 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.7/58.5/48.0/42.7 (BP = 0.979 ratio = 0.979 hyp_len = 6228 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.8/58.7/48.1/42.8 (BP = 0.978 ratio = 0.979 hyp_len = 6223 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.8/58.6/48.1/42.7 (BP = 0.979 ratio = 0.979 hyp_len = 6226 ref_len = 6359)
+1501m 43s (- 773m 37s) (559614 66%) 0.1631  26.0719
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.1/56.6/46.0/40.6 (BP = 0.996 ratio = 0.996 hyp_len = 6331 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.8/48.3/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6202 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.8/48.3/43.3 (BP = 0.974 ratio = 0.975 hyp_len = 6198 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.8/48.3/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6202 ref_len = 6359)
+1527m 30s (- 752m 21s) (568093 67%) 0.1461  25.8375
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.1/56.8/46.1/40.6 (BP = 0.997 ratio = 0.997 hyp_len = 6337 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.1/59.0/48.5/43.4 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.2/59.1/48.6/43.5 (BP = 0.974 ratio = 0.974 hyp_len = 6195 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.1/59.1/48.6/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6199 ref_len = 6359)
+1552m 26s (- 730m 33s) (576572 68%) 0.1633  25.6017
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.2/56.9/46.2/40.5 (BP = 0.997 ratio = 0.997 hyp_len = 6341 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.0 78.7/58.4/47.8/42.6 (BP = 0.977 ratio = 0.977 hyp_len = 6214 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.7/48.1/42.9 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.7/48.1/42.9 (BP = 0.975 ratio = 0.976 hyp_len = 6204 ref_len = 6359)
+1578m 43s (- 709m 16s) (585051 69%) 0.1480  25.3995
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.8 77.0/56.3/45.6/40.0 (BP = 0.996 ratio = 0.996 hyp_len = 6334 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 78.7/58.3/47.7/42.3 (BP = 0.978 ratio = 0.978 hyp_len = 6220 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 79.0/58.6/48.0/42.8 (BP = 0.974 ratio = 0.975 hyp_len = 6197 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.9/58.5/48.0/42.7 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+1607m 7s (- 688m 46s) (593530 70%) 0.1530  25.5686
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.9 77.1/56.5/45.8/40.3 (BP = 0.994 ratio = 0.994 hyp_len = 6321 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.3/43.2 (BP = 0.974 ratio = 0.975 hyp_len = 6197 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/59.0/48.5/43.4 (BP = 0.972 ratio = 0.972 hyp_len = 6184 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.9/48.4/43.3 (BP = 0.973 ratio = 0.974 hyp_len = 6192 ref_len = 6359)
+1637m 13s (- 668m 43s) (602009 71%) 0.1457  25.4129
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 76.9/56.4/45.9/40.3 (BP = 1.000 ratio = 1.000 hyp_len = 6358 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.8/48.3/43.0 (BP = 0.976 ratio = 0.976 hyp_len = 6208 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.2/59.0/48.5/43.2 (BP = 0.974 ratio = 0.974 hyp_len = 6193 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.9/48.5/43.2 (BP = 0.974 ratio = 0.975 hyp_len = 6197 ref_len = 6359)
+1665m 41s (- 647m 45s) (610488 72%) 0.1504  25.7205
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.0/56.5/45.8/39.9 (BP = 1.000 ratio = 1.000 hyp_len = 6359 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.9/58.7/48.0/42.6 (BP = 0.980 ratio = 0.980 hyp_len = 6230 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.8/48.2/42.7 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.9/58.8/48.2/42.7 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+1692m 17s (- 625m 55s) (618967 73%) 0.1603  25.8113
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.6 77.5/57.0/46.4/40.9 (BP = 0.996 ratio = 0.996 hyp_len = 6332 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.0/48.6/43.4 (BP = 0.977 ratio = 0.977 hyp_len = 6214 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.2/48.8/43.6 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.2/59.2/48.7/43.6 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+1718m 48s (- 603m 54s) (627446 74%) 0.1485  25.9342
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.0/56.3/45.6/39.9 (BP = 0.999 ratio = 0.999 hyp_len = 6354 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.1/42.8 (BP = 0.977 ratio = 0.978 hyp_len = 6216 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.2/42.9 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.2/42.9 (BP = 0.976 ratio = 0.976 hyp_len = 6209 ref_len = 6359)
+1745m 28s (- 581m 49s) (635925 75%) 0.1602  26.1338
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.4 77.6/57.1/46.4/40.7 (BP = 0.992 ratio = 0.992 hyp_len = 6311 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.3/59.1/48.4/43.2 (BP = 0.973 ratio = 0.974 hyp_len = 6192 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.4/59.2/48.5/43.3 (BP = 0.972 ratio = 0.972 hyp_len = 6181 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.3/59.1/48.5/43.2 (BP = 0.972 ratio = 0.973 hyp_len = 6186 ref_len = 6359)
+1771m 58s (- 559m 34s) (644404 76%) 0.1428  26.1297
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.9 77.1/56.4/45.7/40.3 (BP = 0.995 ratio = 0.995 hyp_len = 6325 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.1/58.9/48.5/43.5 (BP = 0.973 ratio = 0.973 hyp_len = 6189 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.2/58.9/48.5/43.5 (BP = 0.972 ratio = 0.973 hyp_len = 6186 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.1/58.9/48.5/43.5 (BP = 0.973 ratio = 0.973 hyp_len = 6190 ref_len = 6359)
+1798m 40s (- 537m 15s) (652883 77%) 0.1459  26.2005
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.9 77.2/56.5/45.8/40.2 (BP = 0.994 ratio = 0.994 hyp_len = 6319 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 78.9/58.4/47.7/42.3 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 79.0/58.6/47.9/42.4 (BP = 0.974 ratio = 0.974 hyp_len = 6193 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.9 79.0/58.5/47.8/42.4 (BP = 0.974 ratio = 0.975 hyp_len = 6197 ref_len = 6359)
+1825m 0s (- 514m 44s) (661362 78%) 0.1548  26.2136
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 76.9/56.5/45.9/40.5 (BP = 1.000 ratio = 1.001 hyp_len = 6366 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 78.9/58.7/48.2/43.0 (BP = 0.979 ratio = 0.979 hyp_len = 6224 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.0/58.9/48.4/43.2 (BP = 0.977 ratio = 0.978 hyp_len = 6217 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 78.9/58.8/48.3/43.1 (BP = 0.979 ratio = 0.979 hyp_len = 6225 ref_len = 6359)
+1851m 29s (- 492m 10s) (669841 79%) 0.1430  25.9153
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.8 77.0/56.3/45.7/40.0 (BP = 0.995 ratio = 0.995 hyp_len = 6330 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.7/48.2/43.0 (BP = 0.976 ratio = 0.977 hyp_len = 6211 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.7/48.2/43.0 (BP = 0.976 ratio = 0.977 hyp_len = 6211 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.1/42.9 (BP = 0.977 ratio = 0.977 hyp_len = 6215 ref_len = 6359)
+1878m 2s (- 469m 30s) (678320 80%) 0.1536  25.9515
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.0/56.4/45.8/40.3 (BP = 0.997 ratio = 0.997 hyp_len = 6343 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.5/47.9/42.7 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.7/48.2/43.1 (BP = 0.976 ratio = 0.976 hyp_len = 6208 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.6/48.1/43.0 (BP = 0.977 ratio = 0.978 hyp_len = 6216 ref_len = 6359)
+1904m 43s (- 446m 47s) (686799 81%) 0.1440  25.6380
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.3 76.5/55.6/44.9/39.2 (BP = 1.000 ratio = 1.000 hyp_len = 6356 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.2/42.9 (BP = 0.977 ratio = 0.977 hyp_len = 6212 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.9/48.5/43.3 (BP = 0.974 ratio = 0.974 hyp_len = 6194 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.8/48.3/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+1931m 25s (- 423m 58s) (695278 82%) 0.1568  25.9867
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.5/56.9/46.1/40.8 (BP = 0.993 ratio = 0.993 hyp_len = 6314 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.8 79.3/59.2/48.7/43.8 (BP = 0.974 ratio = 0.975 hyp_len = 6197 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.3/48.9/44.1 (BP = 0.972 ratio = 0.973 hyp_len = 6186 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.9 79.3/59.3/48.9/44.0 (BP = 0.973 ratio = 0.973 hyp_len = 6190 ref_len = 6359)
+1958m 2s (- 401m 2s) (703757 83%) 0.1482  25.7356
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.4 76.7/55.8/45.0/39.1 (BP = 1.000 ratio = 1.003 hyp_len = 6376 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.8/58.4/47.8/42.4 (BP = 0.981 ratio = 0.981 hyp_len = 6237 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.1/42.7 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.1/42.7 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+1984m 46s (- 378m 3s) (712236 84%) 0.1466  26.4926
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 52.7 76.8/56.0/45.3/39.6 (BP = 1.000 ratio = 1.001 hyp_len = 6363 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.0/58.9/48.5/43.4 (BP = 0.977 ratio = 0.977 hyp_len = 6215 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.1/48.7/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6202 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.1/48.7/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6202 ref_len = 6359)
+2009m 57s (- 354m 41s) (720715 85%) 0.1524  25.9170
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.3/56.7/45.8/40.1 (BP = 0.997 ratio = 0.997 hyp_len = 6339 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.5/59.2/48.4/43.0 (BP = 0.973 ratio = 0.973 hyp_len = 6189 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.6/59.4/48.6/43.3 (BP = 0.970 ratio = 0.971 hyp_len = 6172 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.5/59.4/48.6/43.3 (BP = 0.971 ratio = 0.971 hyp_len = 6176 ref_len = 6359)
+2034m 35s (- 331m 12s) (729194 86%) 0.1560  26.1545
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.2/56.7/45.9/40.4 (BP = 0.998 ratio = 0.998 hyp_len = 6344 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.3/59.1/48.5/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.3/59.2/48.6/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6200 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.2/59.2/48.6/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+2059m 35s (- 307m 45s) (737673 87%) 0.1586  25.9225
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.6 77.5/57.1/46.3/40.7 (BP = 0.998 ratio = 0.998 hyp_len = 6344 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.2/59.0/48.3/43.1 (BP = 0.977 ratio = 0.978 hyp_len = 6216 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.2/59.1/48.4/43.2 (BP = 0.976 ratio = 0.977 hyp_len = 6211 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.2/59.1/48.4/43.2 (BP = 0.977 ratio = 0.977 hyp_len = 6212 ref_len = 6359)
+2086m 36s (- 284m 32s) (746152 88%) 0.1540  26.2922
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 76.9/56.3/45.7/40.0 (BP = 1.000 ratio = 1.003 hyp_len = 6376 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.6/58.3/47.7/42.5 (BP = 0.980 ratio = 0.980 hyp_len = 6234 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.6/58.3/47.7/42.5 (BP = 0.980 ratio = 0.980 hyp_len = 6231 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.6/58.3/47.7/42.5 (BP = 0.980 ratio = 0.980 hyp_len = 6233 ref_len = 6359)
+2113m 50s (- 261m 15s) (754631 89%) 0.1426  26.2254
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.1/56.6/45.8/40.1 (BP = 0.996 ratio = 0.996 hyp_len = 6331 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.0/58.7/48.2/42.9 (BP = 0.977 ratio = 0.977 hyp_len = 6213 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.2/58.9/48.4/43.3 (BP = 0.973 ratio = 0.974 hyp_len = 6192 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.9/48.4/43.2 (BP = 0.974 ratio = 0.974 hyp_len = 6196 ref_len = 6359)
+2138m 41s (- 237m 37s) (763110 90%) 0.1401  26.5122
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.1/56.5/45.8/40.4 (BP = 0.995 ratio = 0.995 hyp_len = 6326 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.7/58.4/48.0/43.0 (BP = 0.977 ratio = 0.978 hyp_len = 6216 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.8/58.6/48.2/43.1 (BP = 0.975 ratio = 0.976 hyp_len = 6205 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.7/58.5/48.1/43.1 (BP = 0.976 ratio = 0.976 hyp_len = 6209 ref_len = 6359)
+2163m 12s (- 213m 56s) (771589 91%) 0.1470  25.9600
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.5 77.1/56.6/46.1/40.7 (BP = 1.000 ratio = 1.000 hyp_len = 6361 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 78.7/58.4/47.9/42.8 (BP = 0.981 ratio = 0.981 hyp_len = 6239 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.9/58.6/48.1/43.0 (BP = 0.979 ratio = 0.979 hyp_len = 6224 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 78.9/58.6/48.1/43.1 (BP = 0.979 ratio = 0.979 hyp_len = 6228 ref_len = 6359)
+2187m 48s (- 190m 14s) (780068 92%) 0.1461  25.9905
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.0/56.5/45.7/40.1 (BP = 0.999 ratio = 0.999 hyp_len = 6355 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.0/58.7/48.2/43.0 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.8/48.2/43.1 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 79.1/58.8/48.2/43.1 (BP = 0.976 ratio = 0.977 hyp_len = 6211 ref_len = 6359)
+2213m 21s (- 166m 35s) (788547 93%) 0.1402  26.1666
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.0 77.1/56.6/46.0/40.6 (BP = 0.992 ratio = 0.992 hyp_len = 6309 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.2 78.9/58.6/48.2/42.9 (BP = 0.975 ratio = 0.975 hyp_len = 6199 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.8/48.4/43.2 (BP = 0.973 ratio = 0.974 hyp_len = 6191 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.3/43.1 (BP = 0.974 ratio = 0.974 hyp_len = 6195 ref_len = 6359)
+2238m 2s (- 142m 51s) (797026 94%) 0.1393  26.1793
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.0/56.6/45.9/40.2 (BP = 1.000 ratio = 1.001 hyp_len = 6367 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.4 78.8/58.6/48.2/43.0 (BP = 0.978 ratio = 0.978 hyp_len = 6221 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.1/58.8/48.4/43.3 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.0/58.8/48.4/43.3 (BP = 0.976 ratio = 0.977 hyp_len = 6211 ref_len = 6359)
+2262m 29s (- 119m 4s) (805505 95%) 0.1419  26.2094
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.1 77.0/56.3/45.7/40.3 (BP = 0.999 ratio = 0.999 hyp_len = 6352 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.0/58.8/48.3/43.4 (BP = 0.977 ratio = 0.977 hyp_len = 6213 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.1/58.9/48.4/43.5 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.0/58.9/48.4/43.5 (BP = 0.976 ratio = 0.977 hyp_len = 6210 ref_len = 6359)
+2286m 58s (- 95m 17s) (813984 96%) 0.1513  26.1812
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 76.9/56.5/45.8/40.2 (BP = 1.000 ratio = 1.003 hyp_len = 6380 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.5 79.2/59.0/48.3/43.1 (BP = 0.977 ratio = 0.977 hyp_len = 6213 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.3/59.1/48.5/43.3 (BP = 0.975 ratio = 0.975 hyp_len = 6201 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 79.3/59.1/48.4/43.2 (BP = 0.975 ratio = 0.976 hyp_len = 6205 ref_len = 6359)
+2311m 37s (- 71m 29s) (822463 97%) 0.1483  26.3745
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.3 77.3/56.8/46.0/40.6 (BP = 0.995 ratio = 0.995 hyp_len = 6329 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.1 78.9/58.4/47.8/42.8 (BP = 0.976 ratio = 0.976 hyp_len = 6206 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.7/48.1/43.2 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.3 79.0/58.6/48.1/43.1 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+2335m 45s (- 47m 40s) (830942 98%) 0.1403  26.0792
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.2 77.1/56.6/45.8/40.1 (BP = 1.000 ratio = 1.000 hyp_len = 6359 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.0/48.5/43.3 (BP = 0.977 ratio = 0.977 hyp_len = 6213 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.2/59.1/48.6/43.5 (BP = 0.975 ratio = 0.975 hyp_len = 6203 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.7 79.1/59.0/48.5/43.4 (BP = 0.976 ratio = 0.976 hyp_len = 6207 ref_len = 6359)
+2360m 33s (- 23m 50s) (839421 99%) 0.1374  26.3839
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 53.5 77.1/56.8/46.3/40.7 (BP = 0.998 ratio = 0.998 hyp_len = 6348 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 78.8/58.7/48.4/43.2 (BP = 0.978 ratio = 0.979 hyp_len = 6223 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 78.8/58.8/48.5/43.4 (BP = 0.977 ratio = 0.978 hyp_len = 6217 ref_len = 6359)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.
+BLEU+case.mixed+numrefs.1+smooth.exp+tok.13a+version.1.5.1 = 54.6 78.8/58.8/48.5/43.4 (BP = 0.978 ratio = 0.978 hyp_len = 6219 ref_len = 6359)
+2386m 56s (- 0m 0s) (847900 100%) 0.1523  26.1471
