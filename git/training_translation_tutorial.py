@@ -532,7 +532,7 @@ for epoch in range(N_EPOCHS):
     print(f'\tTrain Loss: {train_loss:.3f} | Train PPL: {math.exp(train_loss):7.3f}')
     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. PPL: {math.exp(valid_loss):7.3f}')
     print(f'| Test Loss: {test_loss:.3f} | Test PPL: {math.exp(test_loss):7.3f} |')
-    torch.save(model.state_dict(),f'saved_models/model_{epoch+46:02}_{valid_loss:.3f}_{math.exp(valid_loss):7.3f}_{test_loss:.3f}_{math.exp(test_loss):7.3f}')
+    torch.save(model.state_dict(),f'saved_models/model_{epoch+1:02}_{valid_loss:.3f}_{math.exp(valid_loss):7.3f}_{test_loss:.3f}_{math.exp(test_loss):7.3f}')
 
 # test_loss = evaluate(model, test_iter, criterion)
 
