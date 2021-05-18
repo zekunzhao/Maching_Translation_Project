@@ -125,7 +125,7 @@ Please pay attention to ``collate_fn`` (optional) that merges a list of samples 
 
 import torch
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda:5' if torch.cuda.is_available() else 'cpu')
 
 BATCH_SIZE = 16
 PAD_IDX = sp_en.pad_id()
