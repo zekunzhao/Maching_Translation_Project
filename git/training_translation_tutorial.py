@@ -127,7 +127,7 @@ import torch
 
 device = torch.device('cuda:5' if torch.cuda.is_available() else 'cpu')
 
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 PAD_IDX = sp_en.pad_id()
 BOS_IDX = sp_en.bos_id()
 EOS_IDX = sp_en.eos_id()
@@ -400,7 +400,9 @@ def init_weights(m: nn.Module):
 
 model.apply(init_weights)
 
-optimizer = optim.Adam(model.parameters())
+# optimizer = optim.Adam(model.parameters())
+optimizer = optim.SGD(encoder.parameters(), lr=learning_rate,momentum=0.5)
+encoder_scheduler = torch.optim.lr_scheduler.StepLR(model, 1.0, gamma=0.95)
 
 
 def count_parameters(model: nn.Module):
@@ -510,7 +512,7 @@ def epoch_time(start_time: int,
 
 
 N_EPOCHS = 50
-CLIP = 1
+CLIP = 0.5
 
 best_valid_loss = float('inf')
 
