@@ -401,8 +401,8 @@ def init_weights(m: nn.Module):
 model.apply(init_weights)
 
 # optimizer = optim.Adam(model.parameters())
-optimizer = optim.SGD(encoder.parameters(), lr=learning_rate,momentum=0.5)
-encoder_scheduler = torch.optim.lr_scheduler.StepLR(model, 1.0, gamma=0.95)
+optimizer = optim.SGD(model.parameters(), lr=0.01,momentum=0.5)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 1.0, gamma=0.95)
 
 
 def count_parameters(model: nn.Module):
@@ -525,6 +525,7 @@ for epoch in range(N_EPOCHS):
     train_loss = train(model, train_iter, optimizer, criterion, CLIP)
     valid_loss = evaluate(model, valid_iter, criterion)
     test_loss = evaluate(model, test_iter, criterion)
+    scheduler.step()
 
     end_time = time.time()
 
