@@ -70,13 +70,13 @@ test_filepaths = ["data/test.de",
 
 import sentencepiece as spm
 
-spm.SentencePieceTrainer.train('--input={0} --model_prefix=de_bpe16 --vocab_size=16000 --model_type=bpe --pad_id=0 --unk_id=1 --bos_id=2 --eos_id=3 --pad_piece=[PAD] --unk_piece=[UNK] --bos_piece=[BOS] --eos_piece=[EOS]'.format(train_filepaths[0]))
-spm.SentencePieceTrainer.train('--input={0} --model_prefix=en_bpe16 --vocab_size=16000 --model_type=bpe --pad_id=0 --unk_id=1 --bos_id=2 --eos_id=3 --pad_piece=[PAD] --unk_piece=[UNK] --bos_piece=[BOS] --eos_piece=[EOS]'.format(train_filepaths[1]))
+spm.SentencePieceTrainer.train('--input={0} --model_prefix=de_bpe16 --vocab_size=8000 --model_type=bpe --pad_id=0 --unk_id=1 --bos_id=2 --eos_id=3 --pad_piece=[PAD] --unk_piece=[UNK] --bos_piece=[BOS] --eos_piece=[EOS]'.format(train_filepaths[0]))
+spm.SentencePieceTrainer.train('--input={0} --model_prefix=en_bpe16 --vocab_size=8000 --model_type=bpe --pad_id=0 --unk_id=1 --bos_id=2 --eos_id=3 --pad_piece=[PAD] --unk_piece=[UNK] --bos_piece=[BOS] --eos_piece=[EOS]'.format(train_filepaths[1]))
 # makes segmenter instance and loads the model file (m.model)
 sp_de = spm.SentencePieceProcessor()
-sp_de.load('de_bpe16.model')
+sp_de.load('de_bpe.model')
 sp_en = spm.SentencePieceProcessor()
-sp_en.load('en_bpe16.model')
+sp_en.load('en_bpe.model')
 
 def data_process(filepaths):
   raw_de_iter = iter(io.open(filepaths[0], encoding="utf8"))
@@ -127,7 +127,7 @@ import torch
 
 device = torch.device('cuda:5' if torch.cuda.is_available() else 'cpu')
 
-BATCH_SIZE = 32
+BATCH_SIZE = 16
 PAD_IDX = sp_en.pad_id()
 BOS_IDX = sp_en.bos_id()
 EOS_IDX = sp_en.eos_id()
